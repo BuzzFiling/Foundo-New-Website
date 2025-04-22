@@ -4,10 +4,7 @@ import Image from "next/image"
 export default function WhyIncorzSection() {
   return (
     <section className="w-full py-16 px-4 sm:px-6 md:px-8 lg:px-16 relative overflow-hidden">
-      {/* Purple side borders - only visible on large screens */}
-      <div className="hidden lg:block absolute left-0 top-0 bottom-0 w-8 bg-purple-800"></div>
-      <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-8 bg-purple-800"></div>
-
+      
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
           {/* Left Column - Text Content */}
