@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 49, 9, 113;
+  --background-end-rgb: 105, 15, 255;
+}
+
+/* Add this to ensure overflow is properly handled at the html and body level */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Make sure the existing body style has overflow-x: hidden */
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to right, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scroll during animations */
+  width: 100%;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Add extra small breakpoint */
+@layer utilities {
+  @variants responsive {
+    .xs\:inline {
+      display: inline;
+    }
+    .xs\:hidden {
+      display: none;
+    }
+    .xs\:block {
+      display: block;
+    }
+    .xs\:inline-block {
+      display: inline-block;
+    }
+    .xs\:w-7 {
+      width: 1.75rem;
+    }
+    .xs\:h-7 {
+      height: 1.75rem;
+    }
+    .xs\:w-8 {
+      width: 2rem;
+    }
+    .xs\:h-8 {
+      height: 2rem;
+    }
+    .xs\:w-9 {
+      width: 2.25rem;
+    }
+    .xs\:h-9 {
+      height: 2.25rem;
+    }
+    .xs\:w-10 {
+      width: 2.5rem;
+    }
+    .xs\:h-10 {
+      height: 2.5rem;
+    }
+    .xs\:w-120px {
+      width: 120px;
+    }
+    .xs\:w-150px {
+      width: 150px;
+    }
+    .xs\:w-180px {
+      width: 180px;
+    }
+    .xs\:h-250px {
+      height: 250px;
+    }
+    .xs\:space-y-4 {
+      margin-top: 1rem;
+    }
+    .xs\:space-y-5 {
+      margin-top: 1.25rem;
+    }
+    .xs\:text-3xl {
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+    }
+    .xs\:text-4xl {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+    }
+    .xs\:text-base {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    .xs\:text-sm {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+    .xs\:px-5 {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+    .xs\:px-6 {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    .xs\:py-2\.5 {
+      padding-top: 0.625rem;
+      padding-bottom: 0.625rem;
+    }
+    .xs\:py-3 {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+    .xs\:max-w-sm {
+      max-width: 24rem;
+    }
+    .xs\:-space-x-3 {
+      margin-left: -0.75rem;
+    }
+    .xs\:top-\[-90px\] {
+      top: -90px;
+    }
+    .xs\:gap-6 {
+      gap: 1.5rem;
+    }
+    .xs\:max-w-\[100px\] {
+      max-width: 100px;
+    }
+  }
+}
+
+/* Add animation for creative elements */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 3s infinite ease-in-out;
+}
+
+/* Scroll animations */
+.animate-on-scroll {
+  transition-property: opacity, transform;
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
