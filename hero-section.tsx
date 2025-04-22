@@ -254,7 +254,7 @@ export default function HeroSection() {
             {/* Main Creative Image - LLC Formation Illustration */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] xs:w-[300px] sm:w-[320px] h-[280px] xs:w-[300px] sm:w-[320px] z-10">
               <Image
-                src="blob:https://v0.dev/8d638d0b-3696-47a4-a774-5f6c71a8ee00"
+                src="https://v0.dev/_next/image?url=https%3A%2F%2Fhebbkx1anhila5yf.public.blob.vercel-storage.com%2F2T-QPXBkS-SRwM-YdCRmfw__1_-removebg-preview-yfqS0pe0cW8sAg1Bm5IGlMlLR9OwPE.png&w=1920&q=75"
                 alt="Business Formation Illustration"
                 width={320}
                 height={320}
@@ -299,7 +299,7 @@ export default function HeroSection() {
             {/* Main image with responsive sizing */}
             <div className="absolute" style={getRightImageStyle()}>
               <Image
-                src="blob:https://v0.dev/8d638d0b-3696-47a4-a774-5f6c71a8ee00"
+                src="https://v0.dev/_next/image?url=https%3A%2F%2Fhebbkx1anhila5yf.public.blob.vercel-storage.com%2F2T-QPXBkS-SRwM-YdCRmfw__1_-removebg-preview-yfqS0pe0cW8sAg1Bm5IGlMlLR9OwPE.png&w=1920&q=75"
                 alt="Business Formation Illustration"
                 fill
                 className="rounded-xl object-contain"
