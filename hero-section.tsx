@@ -206,7 +206,7 @@ export default function HeroSection() {
             </span>
             {/* Yellow Scribble Image - Centered on mobile, left-aligned on desktop */}
             <Image
-              src="https://ideogram.ai/assets/image/lossless/response/2T-QPXBkS-SRwM-YdCRmfw"
+              src="https://v0.dev/_next/image?url=https%3A%2F%2Fhebbkx1anhila5yf.public.blob.vercel-storage.com%2Fimage-kNvfUnSjuEFsQBFLGr5NrFyV9kR9dH.png&w=1920&q=75"
               alt="Scribble"
               width={200}
               height={40}
@@ -254,7 +254,7 @@ export default function HeroSection() {
             {/* Main Creative Image - LLC Formation Illustration */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] xs:w-[300px] sm:w-[320px] h-[280px] xs:w-[300px] sm:w-[320px] z-10">
               <Image
-                src="https://ideogram.ai/assets/progressive-image/balanced/response/QCWn6fsIQ0WvqmrfdVaWZA"
+                src="https://ideogram.ai/assets/image/lossless/response/2T-QPXBkS-SRwM-YdCRmfws"
                 alt="Business Formation Illustration"
                 width={320}
                 height={320}
