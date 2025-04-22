@@ -3,14 +3,14 @@ import Image from "next/image"
 
 export default function WhyIncorz() {
   return (
-    <div className="w-full bg-white py-8 sm:py-12 md:py-16 px-4 sm:px-6">
+    <div className="w-full bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row gap-6 sm:gap-8 items-center">
+        <div className="flex flex-col md:flex-row gap-8 items-center">
           {/* Left Column - Text Content */}
           <div className="md:w-1/2">
-            <h2 className="text-[#4e4747] text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Why Incorz?</h2>
+            <h2 className="text-[#4e4747] text-4xl md:text-5xl font-bold mb-6">Why Incorz?</h2>
 
-            <p className="text-[#504e4e] text-base sm:text-lg mb-6 sm:mb-8 md:mb-10 leading-relaxed">
+            <p className="text-[#504e4e] text-lg mb-10 leading-relaxed">
               We know how to take the complexity out of forming your company because we've been in your shoes. Privatly
               was born because we struggled ourselves—facing a complicated, lengthy process when trying to set up our
               own company in a supported country. Since 2019, we've been committed to providing unmatched expertise,
@@ -19,35 +19,35 @@ export default function WhyIncorz() {
             </p>
 
             {/* Benefits List */}
-            <div className="space-y-4 sm:space-y-6">
-              <div className="flex items-center gap-3 sm:gap-4">
-                <div className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8">
-                  <Award className="text-[#6200ff] h-5 w-5 sm:h-6 sm:w-6" />
+            <div className="space-y-6">
+              <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center w-8 h-8">
+                  <Award className="text-[#6200ff] h-6 w-6" />
                 </div>
-                <span className="text-[#4e4747] text-base sm:text-lg">Expert guidance since 2019</span>
+                <span className="text-[#4e4747] text-lg">Expert guidance since 2019</span>
               </div>
 
-              <div className="flex items-center gap-3 sm:gap-4">
-                <div className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8">
-                  <DollarSign className="text-[#6200ff] h-5 w-5 sm:h-6 sm:w-6" />
+              <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center w-8 h-8">
+                  <DollarSign className="text-[#6200ff] h-6 w-6" />
                 </div>
-                <span className="text-[#4e4747] text-base sm:text-lg">Affordable, no hidden fees</span>
+                <span className="text-[#4e4747] text-lg">Affordable, no hidden fees</span>
               </div>
 
-              <div className="flex items-center gap-3 sm:gap-4">
-                <div className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8">
-                  <Zap className="text-[#6200ff] h-5 w-5 sm:h-6 sm:w-6" />
+              <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center w-8 h-8">
+                  <Zap className="text-[#6200ff] h-6 w-6" />
                 </div>
-                <span className="text-[#4e4747] text-base sm:text-lg">Fast, hassle-free setup</span>
+                <span className="text-[#4e4747] text-lg">Fast, hassle-free setup</span>
               </div>
             </div>
           </div>
 
           {/* Right Column - Image and Process Steps */}
-          <div className="md:w-1/2 relative mt-8 md:mt-0 w-full max-w-md mx-auto md:max-w-none">
+          <div className="md:w-1/2 relative">
             <div className="relative">
               {/* Purple Background */}
-              <div className="absolute top-0 right-0 w-[85%] sm:w-[90%] h-[85%] sm:h-[90%] bg-[#6200ff] rounded-2xl sm:rounded-3xl -z-10"></div>
+              <div className="absolute top-0 right-0 w-[90%] h-[90%] bg-[#6200ff] rounded-3xl -z-10"></div>
 
               {/* Person Image */}
               <div className="relative z-10">
@@ -56,9 +56,7 @@ export default function WhyIncorz() {
                   alt="Person working on laptop"
                   width={600}
                   height={500}
-                  className="rounded-lg sm:rounded-xl w-full h-auto"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  priority
+                  className="rounded-xl"
                 />
               </div>
             </div>
