@@ -206,7 +206,7 @@ export default function HeroSection() {
             </span>
             {/* Yellow Scribble Image - Centered on mobile, left-aligned on desktop */}
             <Image
-              src="https://v0.dev/_next/image?url=https%3A%2F%2Fhebbkx1anhila5yf.public.blob.vercel-storage.com%2Fimage-kNvfUnSjuEFsQBFLGr5NrFyV9kR9dH.png&w=1920&q=75"
+              src="https://ideogram.ai/assets/image/lossless/response/lh-CzpSdQoS_1TiY2iJlLA"
               alt="Scribble"
               width={200}
               height={40}
