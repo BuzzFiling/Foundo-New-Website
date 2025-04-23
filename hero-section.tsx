@@ -254,7 +254,7 @@ export default function HeroSection() {
             {/* Main Creative Image - LLC Formation Illustration */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] xs:w-[300px] sm:w-[320px] h-[280px] xs:w-[300px] sm:w-[320px] z-10">
               <Image
-                src="https://ideogram.ai/assets/progressive-image/balanced/response/QCWn6fsIQ0WvqmrfdVaWZA"
+                src="https://ideogram.ai/assets/image/lossless/response/RXSqOxM1TaiOt8RfTFv9pg"
                 alt="Business Formation Illustration"
                 width={320}
                 height={320}
@@ -299,7 +299,7 @@ export default function HeroSection() {
             {/* Main image with responsive sizing */}
             <div className="absolute" style={getRightImageStyle()}>
               <Image
-                src="https://ideogram.ai/assets/progressive-image/balanced/response/QCWn6fsIQ0WvqmrfdVaWZA"
+                src="https://ideogram.ai/assets/image/lossless/response/RXSqOxM1TaiOt8RfTFv9pg"
                 alt="Business Formation Illustration"
                 fill
                 className="rounded-xl object-contain"
