@@ -20,9 +20,7 @@ export default function Home() {
 
       <HeroSection />
 
-      <AnimatedSection animation="fade-up">
-        <BrandsSection />
-      </AnimatedSection>
+      <BrandsSection />
 
       <AnimatedSection animation="fade-up" delay={200}>
         <LLCFormationSection />

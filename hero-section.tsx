@@ -91,7 +91,7 @@ export default function HeroSection() {
   // Prevent hydration mismatch by not rendering different content on server vs client
   if (!isMounted) {
     return (
-      <section className="relative min-h-[100svh] bg-gradient-to-r from-[#310971] to-[#690fff] flex items-center px-4 sm:px-6 md:px-16 py-10 sm:py-16 md:py-20 overflow-hidden">
+      <section className="relative min-h-[100svh] bg-gradient-to-r from-[#310971] to-[#690fff] flex items-center px-4 sm:px-6 md:px-16 py-10 sm:py-16 md:py-20 pb-0 overflow-hidden">
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto gap-6 sm:gap-8 md:gap-10">
           {/* Loading state or desktop-only content */}
           <div className="flex-1 space-y-4 xs:space-y-5 sm:space-y-6 text-center md:text-left w-full">
@@ -123,7 +123,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="relative min-h-[100svh] bg-gradient-to-r from-[#310971] to-[#690fff] flex items-center px-4 sm:px-6 md:px-16 py-10 sm:py-16 md:py-20 overflow-hidden border-b-0">
+    <section className="relative min-h-[100svh] bg-gradient-to-r from-[#310971] to-[#690fff] flex items-center px-4 sm:px-6 md:px-16 py-10 sm:py-16 md:py-20 pb-0 overflow-hidden border-b-0">
       {/* Center Glow */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div
@@ -254,7 +254,7 @@ export default function HeroSection() {
             {/* Main Creative Image - LLC Formation Illustration */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] xs:w-[300px] sm:w-[320px] h-[280px] xs:w-[300px] sm:w-[320px] z-10">
               <Image
-                src="https://v0.dev/_next/image?url=https%3A%2F%2Fhebbkx1anhila5yf.public.blob.vercel-storage.com%2F2T-QPXBkS-SRwM-YdCRmfw__1_-removebg-preview-yfqS0pe0cW8sAg1Bm5IGlMlLR9OwPE.png&w=1920&q=75"
+                src="https://ideogram.ai/assets/progressive-image/balanced/response/QCWn6fsIQ0WvqmrfdVaWZA"
                 alt="Business Formation Illustration"
                 width={320}
                 height={320}
@@ -299,7 +299,7 @@ export default function HeroSection() {
             {/* Main image with responsive sizing */}
             <div className="absolute" style={getRightImageStyle()}>
               <Image
-                src="https://v0.dev/_next/image?url=https%3A%2F%2Fhebbkx1anhila5yf.public.blob.vercel-storage.com%2F2T-QPXBkS-SRwM-YdCRmfw__1_-removebg-preview-yfqS0pe0cW8sAg1Bm5IGlMlLR9OwPE.png&w=1920&q=75"
+                src="https://ideogram.ai/assets/progressive-image/balanced/response/QCWn6fsIQ0WvqmrfdVaWZA"
                 alt="Business Formation Illustration"
                 fill
                 className="rounded-xl object-contain"

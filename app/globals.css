@@ -21,10 +21,15 @@ body {
 /* Make sure the existing body style has overflow-x: hidden */
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to right, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
   font-family: "Inter", sans-serif;
   overflow-x: hidden; /* Prevent horizontal scroll during animations */
   width: 100%;
+  background-color: white; /* Default background color */
+}
+
+/* Add a utility class for gradient backgrounds */
+.gradient-purple {
+  background: linear-gradient(to right, #310971, #690fff);
 }
 
 @layer utilities {
