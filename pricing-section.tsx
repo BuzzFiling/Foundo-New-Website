@@ -1,4 +1,4 @@
-import { Star } from "lucide-react"
+import { ArrowRight, Star } from "lucide-react"
 
 export default function PricingSection() {
   return (
@@ -55,20 +55,22 @@ export default function PricingSection() {
             <div className="bg-[#3d1a80] border border-white/20 rounded-2xl p-8 w-full max-w-md">
               <p className="text-white text-center text-xl mb-8">All-in-one price</p>
               <h3 className="text-white text-center text-7xl md:text-8xl font-bold mb-8">$599</h3>
-              <div className="flex justify-center">
-                <button className="bg-white text-[#320e6f] font-medium py-4 px-6 rounded-full flex items-center gap-2 hover:bg-opacity-90 transition-all">
-                  Start your LLC in 4 Weeks
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M7 17L17 7M17 7H7M17 7V17"
-                      stroke="#320e6f"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
+               <div className="flex justify-center items-center">
+ <button
+  onClick={() => window.open("https://app.boostyglobal.com/register", "_blank")}
+  className="flex items-center justify-center gap-2 
+             text-sm sm:text-base font-medium
+             text-black capitalize bg-white
+             rounded-lg sm:rounded-xl 
+             px-6 py-4 
+             hover:bg-white/10 hover:text-black transition-colors"
+>
+  <span>Start Your Business</span>
+  <ArrowRight className="w-4 h-4" />
+</button>
+
+</div>
+
             </div>
           </div>
         </div>

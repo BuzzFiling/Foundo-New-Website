@@ -1,6 +1,6 @@
 export default function LLCFormationSection() {
   return (
-    <section className="w-full py-16 bg-[#FAF7FF]">
+    <section className="w-full py-16 bg-white">
       <div className="container mx-auto px-4">
         {/* Subtitle */}
         <p className="text-center text-purple-700 mb-2">
