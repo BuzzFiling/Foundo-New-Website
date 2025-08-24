@@ -62,8 +62,7 @@ export default function PricingSection() {
              text-sm sm:text-base font-medium
              text-black capitalize bg-white
              rounded-lg sm:rounded-xl 
-             px-6 py-4 
-             hover:bg-white/10 hover:text-black transition-colors"
+             px-6 py-4"
 >
   <span>Start Your Business</span>
   <ArrowRight className="w-4 h-4" />
