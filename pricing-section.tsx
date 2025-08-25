@@ -82,3 +82,5 @@ onClick={() => {
     </div>
   )
 }
+
+//pricing-section.tsx
