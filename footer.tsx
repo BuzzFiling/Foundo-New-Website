@@ -64,14 +64,11 @@ export default function Footer() {
           <div className="md:col-span-3 lg:col-span-3 space-y-4 xs:space-y-5 sm:space-y-6">
             <div>
               <div className="flex items-center">
-                <Image
-                  src="/images/logo.svg"
-                  alt="ncorz logo"
-                  width={100}
-                  height={30}
-                  className="w-[80px] xs:w-[90px] sm:w-[100px] h-auto"
-                  priority
-                />
+               <img
+              src="/images/Logo.svg"
+              alt="logo"
+  className="sm:shrink-0 sm:max-w-full w-[240px] 2xs:w-auto ml-[-40px]"
+            />
               </div>
               <p className="text-xs xs:text-sm mt-2 xs:mt-3">
                 Start and Run Your U.S. Business
