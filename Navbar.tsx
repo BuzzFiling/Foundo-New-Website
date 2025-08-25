@@ -59,8 +59,7 @@ export default function Navbar() {
 
             <div className="flex items-center gap-x-5">
               <a
-                href="https://app.boostyglobal.com/register"
-                target="_blank"
+                href="#contact"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 text-sm sm:text-base text-[#5f00ff] bg-white rounded-full px-6 py-3"
               >

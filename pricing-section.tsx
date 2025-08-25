@@ -58,7 +58,12 @@ export default function PricingSection() {
 
               <div className="flex justify-center">
              <button
-  onClick={() => window.open("https://app.boostyglobal.com/register", "_blank")}
+onClick={() => {
+    const contactSection = document.getElementById("contact")
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" }) // smooth scroll
+    }
+  }}
   className="flex items-center justify-center gap-2 
              text-sm sm:text-base font-medium
              text-purple-600 capitalize bg-white

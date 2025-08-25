@@ -31,14 +31,20 @@ export default function HeroSection() {
             one simple package. Starting at $249 + state fees.
           </p>
          <div className="flex justify-center items-center">
-  <button
-    onClick={() => window.open("https://app.boostyglobal.com/register", "_blank")}
-    className="flex items-center justify-center gap-2 text-sm sm:text-base 
-             text-[#5f00ff] capitalize bg-white rounded-full sm:rounded-full  px-6 py-3 "
-  >
-    <span>Start Your Business</span>
-    <ArrowRight className="w-4 h-4" />
-  </button>
+<button
+  onClick={() => {
+    const contactSection = document.getElementById("contact")
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" }) // smooth scroll
+    }
+  }}
+  className="flex items-center justify-center gap-2 text-sm sm:text-base 
+             text-[#5f00ff] capitalize bg-white rounded-full sm:rounded-full px-6 py-3"
+>
+  <span>Start Your Business</span>
+  <ArrowRight className="w-4 h-4" />
+</button>
+
 </div>
 
         </div>
