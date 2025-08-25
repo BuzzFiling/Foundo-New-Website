@@ -83,8 +83,8 @@ className="text-base sm:text-xl xl:text-lg font-light text-white border-b-2 bord
   href="https://app.boostyglobal.com/register"
   target="_blank"
   className="flex items-center justify-center gap-2 text-sm sm:text-base 
-             text-white capitalize bg-[#320e6f] rounded-lg sm:rounded-xl 
-             pl-6 pr-3 py-4"
+             text-[#5f00ff] capitalize bg-white rounded-full sm:rounded-full  px-6 py-3 
+            "
 >
   <span>Start Your Business</span>
   <ArrowRight className="w-4 h-4" />
@@ -103,3 +103,6 @@ className="text-base sm:text-xl xl:text-lg font-light text-white border-b-2 bord
     </header>
   )
 }
+
+
+   

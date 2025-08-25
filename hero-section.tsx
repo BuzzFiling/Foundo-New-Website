@@ -34,12 +34,8 @@ export default function HeroSection() {
          <div className="flex justify-center items-center">
   <button
     onClick={() => window.open("https://app.boostyglobal.com/register", "_blank")}
-    className="flex items-center justify-center gap-2 
-               text-sm sm:text-base font-medium
-               text-white capitalize bg-[#320e6f] 
-               rounded-lg sm:rounded-xl 
-               px-6 py-4 
-               hover:bg-[#45218a] transition-colors"
+    className="flex items-center justify-center gap-2 text-sm sm:text-base 
+             text-[#5f00ff] capitalize bg-white rounded-full sm:rounded-full  px-6 py-3 "
   >
     <span>Start Your Business</span>
     <ArrowRight className="w-4 h-4" />

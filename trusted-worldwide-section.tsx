@@ -70,7 +70,7 @@ export default function TrustedWorldwideSection() {
   }
 
   return (
-    <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-8 bg-[#f8f5ff] relative overflow-hidden">
+    <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-8 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-12 md:mb-16 relative z-10">

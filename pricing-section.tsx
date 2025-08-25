@@ -55,21 +55,20 @@ export default function PricingSection() {
             <div className="bg-[#3d1a80] border border-white/20 rounded-2xl p-8 w-full max-w-md">
               <p className="text-white text-center text-xl mb-8">All-in-one price</p>
               <h3 className="text-white text-center text-7xl md:text-8xl font-bold mb-8">$599</h3>
-               <div className="flex justify-center items-center">
- <button
+              <div className="flex justify-center">
+             <button
   onClick={() => window.open("https://app.boostyglobal.com/register", "_blank")}
   className="flex items-center justify-center gap-2 
              text-sm sm:text-base font-medium
-             text-black capitalize bg-white
-             rounded-lg sm:rounded-xl 
-             px-6 py-4"
+             text-purple-600 capitalize bg-white
+             rounded-full sm:rounded-full  px-6 py-3
+             transition-colors"
 >
   <span>Start Your Business</span>
   <ArrowRight className="w-4 h-4" />
 </button>
 
-</div>
-
+              </div>
             </div>
           </div>
         </div>

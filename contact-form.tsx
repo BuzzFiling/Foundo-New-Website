@@ -124,12 +124,17 @@ export default function ContactForm() {
                 />
               </div>
 
-              <button
-                type="submit"
-                className="w-full py-2.5 xs:py-3 px-4 xs:px-6 bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-medium rounded transition duration-300 ease-in-out text-sm xs:text-base"
-              >
-                Send Message
-              </button>
+             <button
+  onClick={() => window.open("https://app.boostyglobal.com/register", "_blank")}
+  className="flex items-center justify-center gap-2 
+             text-sm sm:text-base font-medium
+             text-purple-600 capitalize bg-white
+          rounded-full sm:rounded-full  px-6 py-3
+            transition-colors"
+>
+  <span>Send Message</span>
+</button>
+
             </form>
           </div>
 
