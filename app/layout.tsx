@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Incorz - Start Your US Business Online',
+  description: 'incorz helps you start your US business online with ease. Form your LLC, get your EIN, open a business bank account & stay compliant – all in one simple package.',
+  generator: 'Next.js',
   icons: {
     icon: '/images/favicon.ico', // Path relative to /public folder
   },
