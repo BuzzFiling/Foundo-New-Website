@@ -70,7 +70,7 @@ export default function ContactForm() {
           </p>
         </div>
 
-        <div className="bg-gradient-to-b from-[#320E6F] to-[#6843A7] rounded-lg overflow-hidden shadow-xl flex flex-col md:flex-row">
+        <div className="bg-gradient-to-b from-[#320E6F] to-[#6843A7] rounded-lg overflow-hidden  flex flex-col md:flex-row">
           {/* Form Section - Full width on mobile */}
           <div className="w-full md:w-1/2 p-8 md:p-10">
             <h3 className="text-xl font-semibold text-white mb-6">Send us a message</h3>
