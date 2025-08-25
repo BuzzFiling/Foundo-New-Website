@@ -46,8 +46,8 @@ export default function BrandsSection() {
       logo: "https://cdn.brandfetch.io/idxAg10C0L/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B",
     },
     {
-      name: "Mercury",
-      logo: "https://cdn.brandfetch.io/idq7r2w1uM/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B",
+      name: "Payoneer",
+      logo: "https://cdn.brandfetch.io/idVmyDyyyZ/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B",
     },
     {
       name: "OpenPhone",
