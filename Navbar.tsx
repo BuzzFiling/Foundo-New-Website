@@ -42,7 +42,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="https://app.boostyglobal.com/register"
+              href="#contact"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden xl:flex items-center justify-center gap-2 text-sm sm:text-base text-[#5f00ff] bg-white rounded-full px-6 py-3"

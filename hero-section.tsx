@@ -32,7 +32,12 @@ export default function HeroSection() {
           {/* CTA Button */}
           <div className="flex justify-center items-center">
             <button
-              onClick={() => window.open("https://app.boostyglobal.com/register", "_blank")}
+              onClick={() => {
+    const contactSection = document.getElementById("contact")
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" }) // smooth scroll
+    }
+  }}
               className="flex items-center justify-center gap-2 text-base md:text-lg 
                          text-[#5f00ff] bg-white rounded-full px-6 py-3 font-medium shadow-md hover:shadow-lg transition"
             >
