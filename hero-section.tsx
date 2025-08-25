@@ -3,10 +3,12 @@ import { ArrowRight, Star } from "lucide-react"
 
 export default function HeroSection() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-[#310971] to-[#690fff] mt-16">
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center pt-8 pb-4">
-          <div className="flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-full border mt-16">
+    <div className="min-h-screen bg-gradient-to-r from-[#310971] to-[#690fff] mt-16 flex items-center">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        
+        {/* Trustpilot Rating */}
+        <div className="flex justify-center pt-6 pb-4">
+          <div className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border mt-8 sm:mt-16">
             <span className="text-sm font-medium text-gray-900">Excellent</span>
             <span className="text-sm font-bold text-gray-900">4.7</span>
             <span className="text-sm text-gray-600">out of 5</span>
@@ -15,49 +17,50 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="text-center py-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
-            Start Your U.S{" "}
-            <img src="https://flagcdn.com/24x18/us.png" alt="US Flag" className="inline-block w-8 h-6 mx-2" /> Business
-            from
-            <br />
-            India{""}
-            <img src="https://flagcdn.com/24x18/in.png" alt="Pakistan Flag" className="inline-block w-8 h-6 mx-2" />{" "}
+        {/* Heading + Subtitle */}
+        <div className="text-center py-10 sm:py-16">
+          <h1 className="text-6xl md:text-6xl font-bold text-white mb-6 sm:mb-8 leading-tight tracking-tight break-words">
+            Start Your U.S Business 🚀 <br className="hidden sm:block"/> 
             Fast & Fully Online
           </h1>
 
-          <p className="text-xl text-white mb-12 max-w-4xl mx-auto leading-relaxed">
-            Form your LLC, get your EIN, open a business bank account & stay compliant all in
-            one simple package. Starting at $249 + state fees.
+          <p className="text-lg md:text-xl text-white mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
+            Form your LLC, get your EIN, open a business bank account & stay compliant – 
+            all in one simple package. Starting at $249 + state fees.
           </p>
-         <div className="flex justify-center items-center">
-<button
-  onClick={() => {
-    const contactSection = document.getElementById("contact")
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" }) // smooth scroll
-    }
-  }}
-  className="flex items-center justify-center gap-2 text-sm sm:text-base 
-             text-[#5f00ff] capitalize bg-white rounded-full sm:rounded-full px-6 py-3"
->
-  <span>Start Your Business</span>
-  <ArrowRight className="w-4 h-4" />
-</button>
 
-</div>
-
-        </div>
-
-        <div className="pb-16">
-          <div className="max-w-5xl mx-auto">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5eafb51238ec07d5bfa4c45af78be41ec1b80686-EhyTnEEKZKT6VB0f6oHzmX1hBz7fiT.png"
-              alt="BuzzFiling Dashboard Interface"
-              className="w-full h-auto rounded-lg "
-            />
+          {/* CTA Button */}
+          <div className="flex justify-center items-center">
+            <button
+              onClick={() => window.open("https://app.boostyglobal.com/register", "_blank")}
+              className="flex items-center justify-center gap-2 text-base md:text-lg 
+                         text-[#5f00ff] bg-white rounded-full px-6 py-3 font-medium shadow-md hover:shadow-lg transition"
+            >
+              <span>Start Your Business</span>
+              <ArrowRight className="w-5 h-5" />
+            </button>
           </div>
         </div>
+
+        {/* Video Section */}
+        <div className="pb-10 sm:pb-16">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex justify-center px-2">
+              <div className="w-full max-w-[900px] aspect-video">
+                <iframe
+                  className="w-full h-full rounded-lg sm:rounded-xl"
+                  src="https://www.youtube-nocookie.com/embed/eqBjIoPbWSA?si=t19NxnQD4z1gFUPs"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
       </main>
     </div>
   )
