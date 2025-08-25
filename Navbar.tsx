@@ -43,7 +43,6 @@ export default function Navbar() {
 
             <a
               href="#contact"
-              target="_blank"
               rel="noopener noreferrer"
               className="hidden xl:flex items-center justify-center gap-2 text-sm sm:text-base text-[#5f00ff] bg-white rounded-full px-6 py-3"
             >
@@ -114,8 +113,7 @@ export default function Navbar() {
               </a>
 
               <a
-                href="https://app.boostyglobal.com/register"
-                target="_blank"
+                href="#contact"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 mt-3 text-sm text-[#5f00ff] bg-white rounded-full px-6 py-3"
                 onClick={() => setIsMenuOpen(false)}
