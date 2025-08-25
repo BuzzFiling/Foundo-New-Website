@@ -1,9 +1,9 @@
 "use client"
 
 import type React from "react"
-
 import { useState, useEffect } from "react"
 import Image from "next/image"
+import { motion, AnimatePresence } from "framer-motion"
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -13,6 +13,7 @@ export default function ContactForm() {
   })
   const [windowWidth, setWindowWidth] = useState(0)
   const [isMounted, setIsMounted] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
   // Track window width for responsive adjustments
   useEffect(() => {
@@ -22,13 +23,9 @@ export default function ContactForm() {
       setWindowWidth(window.innerWidth)
     }
 
-    // Set initial width
     handleResize()
-
-    // Add event listener
     window.addEventListener("resize", handleResize)
 
-    // Cleanup
     return () => {
       window.removeEventListener("resize", handleResize)
     }
@@ -46,16 +43,17 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission logic here
     console.log("Form submitted:", formData)
-    // Reset form after submission
+
     setFormData({
       fullName: "",
       email: "",
       message: "",
     })
-    // Show success message
-    alert("Message sent! We'll get back to you soon.")
+
+    // Trigger success animation
+    setIsSubmitted(true)
+    setTimeout(() => setIsSubmitted(false), 4000) // Hide after 4s
   }
 
   return (
@@ -70,11 +68,27 @@ export default function ContactForm() {
           </p>
         </div>
 
-        <div className="bg-gradient-to-b from-[#320E6F] to-[#6843A7] rounded-lg overflow-hidden  flex flex-col md:flex-row">
-          {/* Form Section - Full width on mobile */}
+        <div className="bg-gradient-to-b from-[#320E6F] to-[#6843A7] rounded-lg overflow-hidden flex flex-col md:flex-row">
+          {/* Form Section */}
           <div className="w-full md:w-1/2 p-8 md:p-10">
             <h3 className="text-xl font-semibold text-white mb-6">Send us a message</h3>
 
+            {/* Success Animation */}
+            <AnimatePresence>
+              {isSubmitted && (
+                <motion.div
+                  initial={{ opacity: 0, y: -20, scale: 0.8 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -20, scale: 0.8 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                  className="mb-6 rounded-lg bg-green-500/90 p-4 text-center text-white font-medium shadow-md"
+                >
+                  🎉 Thank you! Your message has been sent successfully.
+                </motion.div>
+              )}
+            </AnimatePresence>
+
+            {/* Form */}
             <form onSubmit={handleSubmit} className="space-y-4 xs:space-y-5">
               <div>
                 <label htmlFor="fullName" className="block text-white mb-1.5 xs:mb-2 text-xs xs:text-sm">
@@ -124,21 +138,20 @@ export default function ContactForm() {
                 />
               </div>
 
-             <button
-  onClick={() => window.open("https://app.boostyglobal.com/register", "_blank")}
-  className="flex items-center justify-center gap-2 
-             text-sm sm:text-base font-medium
-             text-purple-600 capitalize bg-white
-          rounded-full sm:rounded-full  px-6 py-3
-            transition-colors"
->
-  <span>Send Message</span>
-</button>
-
+              <button
+                type="submit"
+                className="flex items-center justify-center gap-2 
+                  text-sm sm:text-base font-medium
+                  text-purple-600 capitalize bg-white
+                  rounded-full px-6 py-3
+                  transition-colors hover:bg-purple-100"
+              >
+                <span>Send Message</span>
+              </button>
             </form>
           </div>
 
-          {/* Image Section - Hidden on mobile */}
+          {/* Image Section */}
           {!isMobile && (
             <div className="w-full md:w-1/2 bg-gradient-to-b from-[#6843A7] to-[#390099] flex items-center justify-center p-6">
               <div className="relative w-full h-[300px] md:h-full">
