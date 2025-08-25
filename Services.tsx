@@ -14,12 +14,14 @@ import {
   Users,
   FileEdit,
   FileX,
+  HandCoins,
+  Lock
 } from "lucide-react"
 
 export default function ServicesGrid() {
   const services = [
     {
-      icon: <Building2 className="w-5 h-5 sm:w-6 sm:h-6 text-[#5f00ff]" />,
+      icon: <Landmark className="w-5 h-5 sm:w-6 sm:h-6 text-[#5f00ff]" />,
       title: "Bank Account Application",
       description:
         "Set up a secure business bank account in 3-5 business days and get a physical debit card to your home address.",
@@ -34,19 +36,19 @@ export default function ServicesGrid() {
       icon: <FileCheck className="w-5 h-5 sm:w-6 sm:h-6 text-[#5f00ff]" />,
       title: "ITIN",
       description:
-        "Get an ITIN to open a bank account, file taxes, and use PayPal easily with Clemta, a CAA recognized by the IRS.",
+        "Get your ITIN easily with Incorz, partnered with an IRS-recognized CAA, to open PayPal account and file taxes.",
     },
     {
       icon: <Receipt className="w-5 h-5 sm:w-6 sm:h-6 text-[#5f00ff]" />,
       title: "Federal Tax Filing",
       description:
-        "File your personal and business tax returns with Clemta's step-by-step guidance and advanced tools.",
+        "File your personal and business tax returns easily with Incorz expert guidance and dedicated support team.",
     },
     {
-      icon: <Landmark className="w-5 h-5 sm:w-6 sm:h-6 text-[#5f00ff]" />,
+      icon: <HandCoins className="w-5 h-5 sm:w-6 sm:h-6 text-[#5f00ff]" />,
       title: "State Tax Filing",
       description:
-        "File your annual reports and pay state taxes with Clemta's user-friendly interface to remain fully compliant.",
+        "File your annual reports and pay state taxes with Incorz user-friendly interface to remain fully compliant.",
     },
     {
       icon: <ArrowUpCircle className="w-5 h-5 sm:w-6 sm:h-6 text-[#5f00ff]" />,
@@ -55,10 +57,10 @@ export default function ServicesGrid() {
         "Shape your company's governance structure and ensure full compliance for a smooth operational transition.",
     },
     {
-      icon: <TrademarkIcon className="w-5 h-5 sm:w-6 sm:h-6 text-[#5f00ff]" />,
+      icon: <Lock className="w-5 h-5 sm:w-6 sm:h-6 text-[#5f00ff]" />,
       title: "Trademark",
       description:
-        "Protect your brand identity with Clemta's trademark services, ensuring a solid foundation for your business.",
+        "Protect your brand identity with Incorz trademark services, ensuring a solid foundation for your business.",
     },
     {
       icon: <ShoppingBag className="w-5 h-5 sm:w-6 sm:h-6 text-[#5f00ff]" />,
@@ -109,7 +111,7 @@ export default function ServicesGrid() {
   ]
 
   return (
-    <div className="w-full bg-white py-8 sm:py-10 md:py-12 lg:py-16 px-3 sm:px-4 md:px-8">
+    <div id="services" className="w-full bg-white py-8 sm:py-10 md:py-12 lg:py-16 px-3 sm:px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8 sm:mb-10 md:mb-12">
           <p className="text-[#5f00ff] font-medium text-sm sm:text-base mb-1 sm:mb-2">More Services</p>

@@ -28,8 +28,7 @@ export default function HeroSection() {
 
           <p className="text-xl text-white mb-12 max-w-4xl mx-auto leading-relaxed">
             Form your LLC, get your EIN, open a business bank account & stay compliant all in
-            <br />
-            one simple package. Starting at $149 + state fees.
+            one simple package. Starting at $249 + state fees.
           </p>
          <div className="flex justify-center items-center">
   <button

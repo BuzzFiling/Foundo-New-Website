@@ -34,31 +34,31 @@ export default function TrustedWorldwideSection() {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      name: "Jhon Doe",
-      title: "Fashion Retailer",
+      name: "Priya Nair",
+      title: "E-Commerce",
       content:
-        "At duis molestie aliquam praesent pharetra aliquam. Quis interdum pharetra lorem scelerisque nulla turpis lectus.",
+        "Affordable, fast, and reliable—Incorz helped launch my e-commerce brand in record time.",
     },
     {
       id: 2,
-      name: "Jhon Doe",
-      title: "Fashion Retailer",
+      name: "Arjun Sharma",
+      title: "FinTech",
       content:
-        "At duis molestie aliquam praesent pharetra aliquam. Quis interdum pharetra lorem scelerisque nulla turpis lectus.",
+        "I was impressed with their clear guidance and quick turnaround. Perfect partner for startups like mine",
     },
     {
       id: 3,
-      name: "Jhon Doe",
-      title: "Fashion Retailer",
+      name: "Sneha Patel",
+      title: "Fashion Retail",
       content:
-        "At duis molestie aliquam praesent pharetra aliquam. Quis interdum pharetra lorem scelerisque nulla turpis lectus.",
+        "Thanks to Incorz, I could focus on my business while they handled all compliance smoothly.",
     },
     {
       id: 4,
-      name: "Jhon Doe",
-      title: "Fashion Retailer",
+      name: "Vikram Iyer",
+      title: "Healthcare",
       content:
-        "At duis molestie aliquam praesent pharetra aliquam. Quis interdum pharetra lorem scelerisque nulla turpis lectus.",
+        "Professional, transparent, and supportive—Incorz is the reason my healthcare startup could go global.",
     },
   ]
 
@@ -78,8 +78,8 @@ export default function TrustedWorldwideSection() {
             Trusted Worldwide: Serving Across 149+ Countries
           </h2>
           <p className="text-[#555] max-w-3xl mx-auto text-sm sm:text-base">
-            Real success stories from small business owners to enterprises! You can find our clients' experiences below
-            and discover how Clemta can help you turn your dream business into reality.
+Real success stories from small business owners to enterprises! You can find our clients' experiences below and discover how Clemta can help you turn your dream business into reality.
+
           </p>
         </div>
 
@@ -105,18 +105,17 @@ export default function TrustedWorldwideSection() {
         {/* Testimonials Grid - Responsive Layout */}
         <div className="relative z-10 flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center lg:items-stretch">
           {/* Left Purple Box - Responsive */}
-          <div className="bg-[#6200ff] rounded-2xl flex flex-col justify-between overflow-hidden shadow-lg w-full max-w-[386px] lg:max-w-none lg:w-[386px] h-auto sm:h-[400px] lg:h-[467px]">
+          <div className="bg-gradient-to-b from-[#320E6F] to-[#6843A7] rounded-2xl flex flex-col justify-between overflow-hidden shadow-lg w-full max-w-[386px] lg:max-w-none lg:w-[386px] h-auto sm:h-[400px] lg:h-[467px]">
             <div className="p-6 sm:p-8 flex-grow flex items-center">
               <p className="text-white text-base sm:text-lg">
-                Real success stories from small business owners to enterprises! You can find our clients' experiences
-                below and discover how Clemta can help you turn your dream business into reality.
+               Incorz made setting up my IT consultancy seamless. Their expertise saved me weeks of confusion and paperwork.
               </p>
             </div>
 
             {/* Name and title at bottom of purple box */}
             <div className="p-6 sm:p-8 pt-0">
-              <h3 className="font-medium text-base sm:text-lg text-white">Jhon Doe</h3>
-              <p className="text-xs sm:text-sm text-white/80">Fashion Retailer</p>
+              <h3 className="font-medium text-base sm:text-lg text-white">Rohit Mehta</h3>
+              <p className="text-xs sm:text-sm text-white/80">IT Services</p>
             </div>
           </div>
 
@@ -136,7 +135,6 @@ export default function TrustedWorldwideSection() {
                 {/* Active Indicator Dot - Only on the third card (bottom left) */}
                 {index === 2 && (
                   <div className="absolute bottom-4 sm:bottom-6 right-4 sm:right-6">
-                    <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-blue-600 rounded-full"></div>
                   </div>
                 )}
               </div>

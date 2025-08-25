@@ -1,5 +1,6 @@
 "use client"
 
+import { MapPin } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { useState, useEffect } from "react"
@@ -57,18 +58,19 @@ export default function Footer() {
   const isLaptopOrLarger = windowWidth >= 1024
 
   return (
-    <footer  className="text-white py-8 sm:py-10 md:py-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 overflow-hidden relative bg-purple-600">
+    <footer  className="text-white py-8 sm:py-10 md:py-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 overflow-hidden relative bg-gradient-to-b from-[#320E6F] to-[#6843A7]">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
           {/* Left section - Logo and contact info */}
           <div className="md:col-span-3 lg:col-span-3 space-y-4 xs:space-y-5 sm:space-y-6">
             <div>
               <div className="flex items-center">
-               <img
-              src="/images/Logo.svg"
-              alt="logo"
-  className="sm:shrink-0 sm:max-w-full w-[240px] 2xs:w-auto ml-[-40px]"
-            />
+            <img
+  src="/images/Logo.svg"
+  alt="logo"
+  className="shrink-0 max-w-full w-[240px] 2xs:w-auto ml-[-30px] sm:ml-[-40px]"
+/>
+
               </div>
               <p className="text-xs xs:text-sm mt-2 xs:mt-3">
                 Start and Run Your U.S. Business
@@ -95,7 +97,7 @@ export default function Footer() {
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
                 <a href="mailto:support@ncorz.com" className="text-sm hover:underline">
-                  support@ncorz.com
+                  hello@incorz.com
                 </a>
               </div>
               <div className="flex items-center gap-2 group">
@@ -113,30 +115,15 @@ export default function Footer() {
                 >
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
-                <a href="tel:+15029709080" className="text-sm hover:underline">
-                  +1 (502) 970 908
+                <a href="tel:+17865749305" className="text-sm">
+                  +1 (786) 574 9305
                 </a>
               </div>
               <div className="flex items-center gap-2 group">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="group-hover:text-white/80 transition-colors"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-                  <path d="M12 17h.01" />
-                </svg>
-                <Link href="/faq" className="text-sm hover:underline">
-                  Frequently Asked Question (FAQ)
-                </Link>
+               <MapPin />
+                <p  className="text-sm ">
+                  1209 Mountain Rd NE, Ste R, Albuquerque, NM 87110
+                </p>
               </div>
             </div>
 
@@ -210,8 +197,7 @@ export default function Footer() {
 
             {/* Footer Text - Only show on larger screens or at bottom on mobile */}
             <div className="text-[10px] xs:text-xs max-w-xs opacity-80 hidden sm:block">
-              Arcu euismod tellus aliquam amet a aenean varius rhoncus. Ut facilisis vulputate nunc et ullamcorper at
-              pellentesque. Commodo ultrices morbi ullamcorper risus duis quisque id auctor sit.
+              Incorz is a technology company. We are not a law firm, nor can we offer official legal advice.
             </div>
           </div>
 
@@ -222,23 +208,28 @@ export default function Footer() {
             <div>
               <ul className="space-y-1.5 xs:space-y-2 sm:space-y-3">
                 <li>
-                  <Link href="#" className="hover:underline transition-all inline-block">
-                    About Us
+                  <Link href="#process" className="hover:underline transition-all inline-block">
+                    Process
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:underline transition-all inline-block">
-                    Contact Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:underline transition-all inline-block">
+                  <Link href="#pricing" className="hover:underline transition-all inline-block">
                     Pricing
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:underline transition-all inline-block">
-                    Our Services
+                  <Link href="#services" className="hover:underline transition-all inline-block">
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#about" className="hover:underline transition-all inline-block">
+                    About
+                  </Link>
+                </li>
+                 <li>
+                  <Link href="#contact" className="hover:underline transition-all inline-block">
+                    Contact
                   </Link>
                 </li>
               </ul>

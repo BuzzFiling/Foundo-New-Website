@@ -2,11 +2,11 @@ import { FileText, Timer, Banknote, CheckCircle2, Award, LandmarkIcon } from "lu
 
 export default function LLCFormationSection() {
   return (
-    <section className="w-full py-8 sm:py-12 md:py-16 bg-white">
+    <section id="process" className="w-full py-8 sm:py-12 md:py-16 bg-white">
       <div className="container mx-auto px-4">
         {/* Subtitle */}
         <p className="text-center text-purple-600 mb-2 text-sm sm:text-base">
-          Your time is precious - Let StartGlobal Do your dirty paperwork
+          Your time is money – Incorz manages all your paperwork.
         </p>
 
         {/* Main heading */}
@@ -26,15 +26,12 @@ export default function LLCFormationSection() {
               LLC FORMATION
             </h3>
             <p className="text-gray-600 mb-8">
-              StartGlobal prepare and file your LLC in the State. This process
-              involves filing the required documents and paying the applicable
-              fees to ensure your LLC is recognized and compliant with state
-              laws.
+              Incorz handles the preparation and filing of your LLC with the State. This process includes submitting the necessary forms and paying state fees, ensuring your company is officially registered.
             </p>
             <div className="flex items-center text-purple-600 mt-auto">
               <CheckCircle2 className="mr-2" size={20} />
               <span className="uppercase text-sm font-medium">
-                Complete Processing
+                3–7 business days (State approval after filing)
               </span>
             </div>
           </div>
@@ -45,17 +42,15 @@ export default function LLCFormationSection() {
               <FileText size={32} strokeWidth={2} />
             </div>
             <h3 className="text-gray-700 font-medium uppercase tracking-wide mb-4">
-              TAX REGISTRATION
+              EIN REGISTRATION
             </h3>
             <p className="text-gray-600 mb-8">
-              We do all form preparations and you can sign the documents on our
-              platform to get an Employer Identification Number (EIN) from the
-              IRS. It serves as your business's tax ID.
+              We complete every form for you, and you can easily sign the documents on our secure platform to obtain your Employer Identification Number (EIN) from the IRS, which works as your tax identification.
             </p>
             <div className="flex items-center text-purple-600 mt-auto">
               <CheckCircle2 className="mr-2" size={20} />
               <span className="uppercase text-sm font-medium">
-                Complete Processing
+                2 weeks (IRS processing once LLC is approved)
               </span>
             </div>
           </div>
@@ -69,14 +64,11 @@ export default function LLCFormationSection() {
               BUSINESS BANK ACCOUNT
             </h3>
             <p className="text-gray-600 mb-8">
-              We'll help you setup your business bank account and setup your
-              banking operations smoothly with your new LLC in the US within a
-              day of getting your EIN from IRS.
-            </p>
+With your EIN approved, we help launch your U.S. business bank account and enable seamless banking operations for your LLC.     </p>
             <div className="flex items-center text-purple-600 mt-auto">
               <CheckCircle2 className="mr-2" size={20} />
               <span className="uppercase text-sm font-medium">
-                Complete Processing
+                1–3 business days (After EIN is issued)
               </span>
             </div>
           </div>
