@@ -237,22 +237,22 @@ export default function Footer() {
             <div>
               <ul className="space-y-2 sm:space-y-3">
                 <li>
-                  <Link href="#" className="hover:underline transition-all inline-block">
+                  <Link href="privacy" className="hover:underline transition-all inline-block">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:underline transition-all inline-block">
+                  <Link href="privacy" className="hover:underline transition-all inline-block">
                     Refund Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:underline transition-all inline-block">
+                  <Link href="terms" className="hover:underline transition-all inline-block">
                     Terms & Conditions
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:underline transition-all inline-block">
+                  <Link href="terms" className="hover:underline transition-all inline-block">
                     Copyrights
                   </Link>
                 </li>
