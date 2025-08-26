@@ -11,7 +11,7 @@ export default function PricingSection() {
         </p>
 
         {/* Pricing Content */}
-        <div className="bg-[#3d1a80] rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-8">
+        <div className="bg-[#EA580C] rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-8">
           {/* Left Column */}
           <div className="md:w-1/2">
             <h3 className="text-white text-3xl md:text-4xl font-bold mb-4">Incorz All-Inclusive Pricing</h3>
@@ -51,7 +51,7 @@ export default function PricingSection() {
 
           {/* Right Column - Price Card */}
           <div className="md:w-1/2 flex justify-center items-center">
-            <div className="bg-[#3d1a80] border border-white/20 rounded-2xl p-8 w-full max-w-md">
+            <div className="bg-[#C24505] border border-white/20 rounded-2xl p-8 w-full max-w-md">
               <p className="text-white text-center text-xl mb-8">All-in-one price</p>
               <h3 className="text-white text-center text-7xl md:text-8xl font-bold mb-8">$249+</h3>
               <p className="text-white text-center text-xl mb-8">State Fee</p>
