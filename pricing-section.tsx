@@ -2,7 +2,7 @@ import { Star } from "lucide-react"
 
 export default function PricingSection() {
   return (
-    <div className="w-full bg-[#320e6f] py-16 px-4">
+    <div className="w-full bg-[#EA580C] py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-4">One price, No Surprises</h2>
@@ -56,12 +56,12 @@ export default function PricingSection() {
               <p className="text-white text-center text-xl mb-8">All-in-one price</p>
               <h3 className="text-white text-center text-7xl md:text-8xl font-bold mb-8">$599</h3>
               <div className="flex justify-center">
-                <button className="bg-white text-[#320e6f] font-medium py-4 px-6 rounded-full flex items-center gap-2 hover:bg-opacity-90 transition-all">
+                <button className="bg-white text-[#EA580C] font-medium py-4 px-6 rounded-full flex items-center gap-2 hover:bg-opacity-90 transition-all">
                   Start your LLC in 4 Weeks
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M7 17L17 7M17 7H7M17 7V17"
-                      stroke="#320e6f"
+                      stroke="#C24505"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"

@@ -56,7 +56,7 @@ export default function BrandsSection() {
   ]
 
   return (
-    <section className="relative w-full py-8 sm:py-10 md:py-12 lg:py-16 bg-gradient-to-r from-[#310971] to-[#690fff] overflow-hidden border-t-0">
+    <section className="relative w-full py-8 sm:py-10 md:py-12 lg:py-16 bg-gradient-to-r from-[#EA580C] to-[#C24505] overflow-hidden border-t-0">
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-center text-white text-lg sm:text-xl mb-6 sm:mb-8 md:mb-10">
           Our business partners and cooperating institutions.

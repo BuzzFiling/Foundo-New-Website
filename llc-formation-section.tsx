@@ -5,21 +5,21 @@ export default function LLCFormationSection() {
     <section id="process" className="w-full py-8 sm:py-12 md:py-16 bg-white">
       <div className="container mx-auto px-4">
         {/* Subtitle */}
-        <p className="text-center text-purple-600 mb-2 text-sm sm:text-base">
+        <p className="text-center text-[#EA580C] mb-2 text-sm sm:text-base">
           Your time is money – Incorz manages all your paperwork.
         </p>
 
         {/* Main heading */}
         <h2 className="text-center text-gray-700 text-2xl sm:text-3xl font-medium mb-6 sm:mb-10">
           LLC with Business Bank Account in{" "}
-          <span className="text-purple-600">4 Weeks</span>
+          <span className="text-[#EA580C]">4 Weeks</span>
         </h2>
 
         {/* Three column layout */}
         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6 sm:gap-[35px]">
           {/* LLC Formation Card */}
           <div className="bg-white rounded-lg w-full sm:w-[355px] mx-auto sm:mx-0 shadow-sm p-6 min-h-[350px]">
-            <div className="mb-4 text-purple-600">
+            <div className="mb-4 text-[#EA580C]">
               <Award size={32} strokeWidth={2} />
             </div>
             <h3 className="text-gray-700 font-medium uppercase tracking-wide mb-4">
@@ -28,7 +28,7 @@ export default function LLCFormationSection() {
             <p className="text-gray-600 mb-8">
               Incorz handles the preparation and filing of your LLC with the State. This process includes submitting the necessary forms and paying state fees, ensuring your company is officially registered.
             </p>
-            <div className="flex items-center text-purple-600 mt-auto">
+            <div className="flex items-center text-[#EA580C] mt-auto">
               <CheckCircle2 className="mr-2" size={20} />
               <span className="uppercase text-sm font-medium">
                 3–7 business days (State approval after filing)
@@ -38,7 +38,7 @@ export default function LLCFormationSection() {
 
           {/* Tax Registration Card */}
           <div className="bg-white rounded-lg w-full sm:w-[355px] mx-auto sm:mx-0 shadow-sm p-6 min-h-[350px]">
-            <div className="mb-4 text-purple-600">
+            <div className="mb-4 text-[#EA580C]">
               <FileText size={32} strokeWidth={2} />
             </div>
             <h3 className="text-gray-700 font-medium uppercase tracking-wide mb-4">
@@ -47,7 +47,7 @@ export default function LLCFormationSection() {
             <p className="text-gray-600 mb-8">
               We complete every form for you, and you can easily sign the documents on our secure platform to obtain your Employer Identification Number (EIN) from the IRS, which works as your tax identification.
             </p>
-            <div className="flex items-center text-purple-600 mt-auto">
+            <div className="flex items-center text-[#EA580C] mt-auto">
               <CheckCircle2 className="mr-2" size={20} />
               <span className="uppercase text-sm font-medium">
                 2 weeks (IRS processing once LLC is approved)
@@ -57,7 +57,7 @@ export default function LLCFormationSection() {
 
           {/* Business Bank Account Card */}
           <div className="bg-white rounded-lg w-full sm:w-[355px] mx-auto sm:mx-0 shadow-sm p-6 min-h-[350px]">
-            <div className="mb-4 text-purple-600">
+            <div className="mb-4 text-[#EA580C]">
               <LandmarkIcon size={32} strokeWidth={2} />
             </div>
             <h3 className="text-gray-700 font-medium uppercase tracking-wide mb-4">
@@ -65,7 +65,7 @@ export default function LLCFormationSection() {
             </h3>
             <p className="text-gray-600 mb-8">
 With your EIN approved, we help launch your U.S. business bank account and enable seamless banking operations for your LLC.     </p>
-            <div className="flex items-center text-purple-600 mt-auto">
+            <div className="flex items-center text-[#EA580C] mt-auto">
               <CheckCircle2 className="mr-2" size={20} />
               <span className="uppercase text-sm font-medium">
                 1–3 business days (After EIN is issued)

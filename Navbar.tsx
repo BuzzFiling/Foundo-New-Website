@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50 bg-gradient-to-r from-[#310971] to-[#690fff]">
+    <header className="absolute inset-x-0 top-0 z-50 bg-gradient-to-r from-[#EA580C] to-[#C24505]">
       <div className="mx-auto w-[95%] max-w-[1440px] py-5">
         <div className="flex items-center justify-between font-medium gap-5">
           {/* Logo */}

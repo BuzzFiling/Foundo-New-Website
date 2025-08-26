@@ -68,7 +68,7 @@ export default function ContactForm() {
           </p>
         </div>
 
-        <div className="bg-gradient-to-b from-[#320E6F] to-[#6843A7] rounded-lg overflow-hidden flex flex-col md:flex-row">
+        <div className="bg-gradient-to-r from-[#C24505] to-[#EA580C] rounded-lg overflow-hidden flex flex-col md:flex-row">
           {/* Form Section */}
           <div className="w-full md:w-1/2 p-8 md:p-10">
             <h3 className="text-xl font-semibold text-white mb-6">Send us a message</h3>
@@ -153,13 +153,13 @@ export default function ContactForm() {
 
           {/* Image Section */}
           {!isMobile && (
-            <div className="w-full md:w-1/2 bg-gradient-to-b from-[#6843A7] to-[#390099] flex items-center justify-center p-6">
+            <div className="w-full md:w-1/2 bg-gradient-to-r from-[#EA580C] to-[#C24505] flex items-center justify-center p-6">
               <div className="relative w-full h-[300px] md:h-full">
                 <Image
                   src="https://v0.dev/_next/image?url=https%3A%2F%2Fhebbkx1anhila5yf.public.blob.vercel-storage.com%2Fc1a8ba111b0fe897ee5f1aa41a3feffa-dUqXkoAJ9SyFVwEbbHFGlggCjRWPKh.png&w=1920&q=75"
                   alt="Support team"
                   fill
-                  className="object-contain bg-gradient-to-b from-[#6843A7] to-[#390099]"
+                  className="object-contain bg-gradient-to-r from-[#EA580C] to-[#C24505]"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   priority
                 />
