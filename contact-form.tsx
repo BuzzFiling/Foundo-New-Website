@@ -142,9 +142,9 @@ export default function ContactForm() {
                 type="submit"
                 className="flex items-center justify-center gap-2 
                   text-sm sm:text-base font-medium
-                  text-purple-600 capitalize bg-white
+                  text-[#EA580C] capitalize bg-white
                   rounded-full px-6 py-3
-                  transition-colors hover:bg-purple-100"
+                  transition-colors hover:bg-[#C24505]"
               >
                 <span>Send Message</span>
               </button>

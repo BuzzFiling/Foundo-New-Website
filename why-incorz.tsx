@@ -58,7 +58,7 @@ export default function WhyIncorz() {
 
               <li className="flex items-center gap-4">
 
-                <Award className="text-[#EA580C] h-6 w-6 shrink-0" />
+                <Award className="text-[#C24505] h-6 w-6 shrink-0" />
 
                 <span className="text-[#4e4747] text-lg">
 
