@@ -44,7 +44,7 @@ export default function Navbar() {
             <a
               href="#contact"
               rel="noopener noreferrer"
-              className="hidden xl:flex items-center justify-center gap-2 text-sm sm:text-base text-[#5f00ff] bg-white rounded-full px-6 py-3"
+              className="hidden xl:flex items-center justify-center gap-2 text-sm sm:text-base text-[#EA580C] bg-white rounded-full px-6 py-3"
             >
               <span>Start Your Business</span>
               <ArrowRight className="w-4 h-4" />
@@ -115,7 +115,7 @@ export default function Navbar() {
               <a
                 href="#contact"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 mt-3 text-sm text-[#5f00ff] bg-white rounded-full px-6 py-3"
+                className="flex items-center justify-center gap-2 mt-3 text-sm text-[#EA580C] bg-white rounded-full px-6 py-3"
                 onClick={() => setIsMenuOpen(false)}
               >
                 <span>Start Your Business</span>

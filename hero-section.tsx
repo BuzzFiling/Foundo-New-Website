@@ -39,7 +39,7 @@ export default function HeroSection() {
     }
   }}
               className="flex items-center justify-center gap-2 text-base md:text-lg 
-                         text-[#5f00ff] bg-white rounded-full px-6 py-3 font-medium shadow-md hover:shadow-lg transition"
+                         text-[#EA580C] bg-white rounded-full px-6 py-3 font-medium shadow-md hover:shadow-lg transition"
             >
               <span>Start Your Business</span>
               <ArrowRight className="w-5 h-5" />
