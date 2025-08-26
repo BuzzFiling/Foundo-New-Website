@@ -73,7 +73,7 @@ export default function Navbar() {
           />
 
           {/* Sidebar */}
-          <div className="absolute right-0 top-0 h-full w-72 max-w-full bg-gradient-to-b from-[#310971] to-[#690fff] shadow-xl transform transition-transform duration-300 ease-in-out translate-x-0">
+          <div className="absolute right-0 top-0 h-full w-72 max-w-full bg-gradient-to-b from-[#EA580C] to-[#C24505] shadow-xl transform transition-transform duration-300 ease-in-out translate-x-0">
             <div className="flex justify-between items-center p-5 border-b border-white/20">
   {/* Logo */}
           <a href="/">

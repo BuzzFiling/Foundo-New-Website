@@ -110,7 +110,7 @@ export default function WhyIncorz() {
 
               {/* Purple Background */}
 
-              <div className="absolute top-4 right-4 w-[92%] h-[92%] bg-[#EA580C] rounded-3xl z-0"></div>
+              <div className="absolute top-4 right-4 w-[92%] h-[92%]  rounded-3xl z-0"></div>
 
 
 
