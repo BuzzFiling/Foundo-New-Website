@@ -57,7 +57,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="w-full py-10 xs:py-12 sm:py-14 md:py-16 bg-[#320E6F]">
+    <section id="contact" className="w-full py-10 xs:py-12 sm:py-14 md:py-16 bg-[#EA580C]">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-6 xs:mb-8 sm:mb-10">
           <h2 className="text-2xl xs:text-3xl md:text-4xl font-bold text-white mb-2">
