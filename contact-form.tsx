@@ -101,7 +101,7 @@ export default function ContactForm() {
                   value={formData.fullName}
                   onChange={handleChange}
                   placeholder="Full Name"
-                  className="w-full px-3 xs:px-4 py-2.5 xs:py-3 rounded bg-[#4A1D9A]/70 border border-[#6A3DBA] text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#8A5DE8] text-sm"
+                  className="w-full px-3 xs:px-4 py-2.5 xs:py-3 rounded bg-[#C24505]/70 border border-[#EA580C] text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#8A5DE8] text-sm"
                   required
                 />
               </div>
@@ -117,7 +117,7 @@ export default function ContactForm() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="your.email@example.com"
-                  className="w-full px-4 py-3 rounded bg-[#4A1D9A]/70 border border-[#6A3DBA] text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#8A5DE8]"
+                  className="w-full px-4 py-3 rounded bg-[#C24505]/70 border border-[#EA580C] text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#8A5DE8]"
                   required
                 />
               </div>
@@ -133,7 +133,7 @@ export default function ContactForm() {
                   onChange={handleChange}
                   placeholder="Your Message"
                   rows={4}
-                  className="w-full px-4 py-3 rounded bg-[#4A1D9A]/70 border border-[#6A3DBA] text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#8A5DE8]"
+                  className="w-full px-4 py-3 rounded bg-[#C24505]/70 border border-[#EA580C] text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#8A5DE8]"
                   required
                 />
               </div>

@@ -58,7 +58,7 @@ export default function WhyIncorz() {
 
               <li className="flex items-center gap-4">
 
-                <Award className="text-[#6200ff] h-6 w-6 shrink-0" />
+                <Award className="text-[#EA580C] h-6 w-6 shrink-0" />
 
                 <span className="text-[#4e4747] text-lg">
 
@@ -72,7 +72,7 @@ export default function WhyIncorz() {
 
               <li className="flex items-center gap-4">
 
-                <DollarSign className="text-[#6200ff] h-6 w-6 shrink-0" />
+                <DollarSign className="text-[#EA580C] h-6 w-6 shrink-0" />
 
                 <span className="text-[#4e4747] text-lg">
 
@@ -86,7 +86,7 @@ export default function WhyIncorz() {
 
               <li className="flex items-center gap-4">
 
-                <Zap className="text-[#6200ff] h-6 w-6 shrink-0" />
+                <Zap className="text-[#EA580C] h-6 w-6 shrink-0" />
 
                 <span className="text-[#4e4747] text-lg">
 
@@ -110,7 +110,7 @@ export default function WhyIncorz() {
 
               {/* Purple Background */}
 
-              <div className="absolute top-4 right-4 w-[92%] h-[92%] bg-[#6200ff] rounded-3xl z-0"></div>
+              <div className="absolute top-4 right-4 w-[92%] h-[92%] bg-[#EA580C] rounded-3xl z-0"></div>
 
 
 
