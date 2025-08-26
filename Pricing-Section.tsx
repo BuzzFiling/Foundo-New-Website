@@ -2,7 +2,7 @@ import { ArrowRight, Plus, Star } from "lucide-react"
 
 export default function PricingSection() {
   return (
-    <div id="pricing" className="w-full bg-[#320e6f] py-16 px-4">
+    <div id="pricing" className="w-full bg-[#C24505] py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-4">One price, No Surprises</h2>
@@ -31,7 +31,7 @@ export default function PricingSection() {
                 <span className="text-white">LLC State Filing</span>
               </div>
               <div className="flex items-center gap-3">
-                <Star className="text-[#dae35a] h-5 w-5 fill-[#dae35a]" />
+                <Star className="text-[#EA580C] h-5 w-5 fill-[#EA580C]" />
                 <span className="text-white">Tax Registration - EIN</span>
               </div>
               <div className="flex items-center gap-3">
@@ -39,11 +39,11 @@ export default function PricingSection() {
                 <span className="text-white">Business Bank Account</span>
               </div>
               <div className="flex items-center gap-3">
-                <Star className="text-[#dae35a] h-5 w-5 fill-[#dae35a]" />
+                <Star className="text-[#EA580C] h-5 w-5 fill-[#EA580C]" />
                 <span className="text-white">Registered Agent for 1 Year</span>
               </div>
               <div className="flex items-center gap-3">
-                <Star className="text-[#dae35a] h-5 w-5 fill-[#dae35a]" />
+                <Star className="text-[#EA580C] h-5 w-5 fill-[#EA580C]" />
                 <span className="text-white">All Government Fees</span>
               </div>
             </div>
