@@ -3,7 +3,7 @@ import { ArrowRight, Star } from "lucide-react"
 
 export default function HeroSection() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-[#EA580C] to-[#C24505] mt-16 flex items-center">
+<div className="min-h-screen bg-gradient-to-r from-[#F30C12] to-[#690206] flex items-center">
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         {/* Trustpilot Rating */}
@@ -54,7 +54,7 @@ export default function HeroSection() {
               <div className="w-full max-w-[900px] aspect-video">
                 <iframe
                   className="w-full h-full rounded-lg sm:rounded-xl"
-                  src="https://www.youtube-nocookie.com/embed/eqBjIoPbWSA?si=t19NxnQD4z1gFUPs"
+                  src="https://www.youtube.com/embed/bQ5oFpQiIS4"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

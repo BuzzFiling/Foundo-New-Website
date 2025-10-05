@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50 bg-gradient-to-r from-[#EA580C] to-[#C24505]">
+    <header className="absolute inset-x-0 top-0 z-50 bg-gradient-to-r from-[#F30C12] to-[#690206]">
       <div className="mx-auto w-[95%] max-w-[1440px] py-5">
         <div className="flex items-center justify-between font-medium gap-5">
           {/* Logo */}
@@ -44,7 +44,7 @@ export default function Navbar() {
             <a
               href="#contact"
               rel="noopener noreferrer"
-              className="hidden xl:flex items-center justify-center gap-2 text-sm sm:text-base text-[#EA580C] bg-white rounded-full px-6 py-3"
+              className="hidden xl:flex items-center justify-center gap-2 text-sm sm:text-base text-[#5f00ff] bg-white rounded-full px-6 py-3"
             >
               <span>Start Your Business</span>
               <ArrowRight className="w-4 h-4" />
@@ -73,12 +73,12 @@ export default function Navbar() {
           />
 
           {/* Sidebar */}
-          <div className="absolute right-0 top-0 h-full w-72 max-w-full bg-gradient-to-b from-[#EA580C] to-[#C24505] shadow-xl transform transition-transform duration-300 ease-in-out translate-x-0">
+          <div className="absolute right-0 top-0 h-full w-72 max-w-full bg-gradient-to-b from-[#310971] to-[#690fff] shadow-xl transform transition-transform duration-300 ease-in-out translate-x-0">
             <div className="flex justify-between items-center p-5 border-b border-white/20">
   {/* Logo */}
           <a href="/">
             <img
-              src="/images/Logo.svg"
+              src="https://www.incorz.com/images/Logo.svg"
               alt="logo"
               className="sm:shrink-0 sm:max-w-full w-[200px] sm:w-[240px]"
             />
@@ -115,7 +115,7 @@ export default function Navbar() {
               <a
                 href="#contact"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 mt-3 text-sm text-[#EA580C] bg-white rounded-full px-6 py-3"
+                className="flex items-center justify-center gap-2 mt-3 text-sm text-[#5f00ff] bg-white rounded-full px-6 py-3"
                 onClick={() => setIsMenuOpen(false)}
               >
                 <span>Start Your Business</span>

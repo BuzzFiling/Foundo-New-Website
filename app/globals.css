@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -18,10 +18,10 @@ body {
   position: relative;
 }
 
-/* Make sure the existing body style has overflow-x: hidden */
+/* Use the Unbounded font */
 body {
   color: rgb(var(--foreground-rgb));
-  font-family: "manrope", sans-serif;
+  font-family: "Unbounded", sans-serif;
   overflow-x: hidden; /* Prevent horizontal scroll during animations */
   width: 100%;
   background-color: white; /* Default background color */

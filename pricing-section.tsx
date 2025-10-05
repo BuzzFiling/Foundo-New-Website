@@ -2,7 +2,7 @@ import { Star } from "lucide-react"
 
 export default function PricingSection() {
   return (
-    <div className="w-full bg-[#C24505] py-16 px-4">
+    <div className="w-full bg-gradient-to-r from-[#F30C12] to-[#690206] flex items-center py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-4">One price, No Surprises</h2>
@@ -12,7 +12,7 @@ export default function PricingSection() {
         </p>
 
         {/* Pricing Content */}
-        <div className="bg-[#EA580C] rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-8">
+        <div className="bg-[#F30C12] rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-8">
           {/* Left Column */}
           <div className="md:w-1/2">
             <h3 className="text-white text-3xl md:text-4xl font-bold mb-4">StartGlobal All-Inclusive Pricing</h3>
@@ -24,27 +24,27 @@ export default function PricingSection() {
             {/* Features List */}
             <div className="grid md:grid-cols-2 gap-x-4 gap-y-6">
               <div className="flex items-center gap-3">
-                <Star className="text-[#dae35a] h-5 w-5 fill-[#dae35a]" />
+                <Star className="text-[#F30C12] h-5 w-5 fill-[#F30C12]" />
                 <span className="text-white">Name check and Clearance</span>
               </div>
               <div className="flex items-center gap-3">
-                <Star className="text-[#dae35a] h-5 w-5 fill-[#dae35a]" />
+                <Star className="text-[#F30C12] h-5 w-5 fill-[#F30C12]" />
                 <span className="text-white">LLC State Filing</span>
               </div>
               <div className="flex items-center gap-3">
-                <Star className="text-[#dae35a] h-5 w-5 fill-[#dae35a]" />
+                <Star className="text-[#F30C12] h-5 w-5 fill-[#F30C12]" />
                 <span className="text-white">Tax Registration - EIN</span>
               </div>
               <div className="flex items-center gap-3">
-                <Star className="text-[#dae35a] h-5 w-5 fill-[#dae35a]" />
+                <Star className="text-[#F30C12] h-5 w-5 fill-[#F30C12]" />
                 <span className="text-white">Business Bank Account</span>
               </div>
               <div className="flex items-center gap-3">
-                <Star className="text-[#dae35a] h-5 w-5 fill-[#dae35a]" />
+                <Star className="text-[#F30C12] h-5 w-5 fill-[#F30C12]" />
                 <span className="text-white">Registered Agent for 1 Year</span>
               </div>
               <div className="flex items-center gap-3">
-                <Star className="text-[#dae35a] h-5 w-5 fill-[#dae35a]" />
+                <Star className="text-[#F30C12] h-5 w-5 fill-[#F30C12]" />
                 <span className="text-white">All Government Fees</span>
               </div>
             </div>
@@ -61,7 +61,7 @@ export default function PricingSection() {
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M7 17L17 7M17 7H7M17 7V17"
-                      stroke="#C24505"
+                      stroke="#F30C12"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"

@@ -58,7 +58,7 @@ export default function Footer() {
   const isLaptopOrLarger = windowWidth >= 1024
 
   return (
-    <footer  className="text-white py-8 sm:py-10 md:py-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 overflow-hidden relative bg-gradient-to-r from-[#EA580C] to-[#C24505]">
+    <footer  className="text-white py-8 sm:py-10 md:py-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 overflow-hidden relative bg-gradient-to-b from-[#320E6F] to-[#6843A7]">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
           {/* Left section - Logo and contact info */}
