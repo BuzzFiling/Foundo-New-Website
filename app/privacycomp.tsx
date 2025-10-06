@@ -2,7 +2,7 @@
 
 export default function Privacycomp() {
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-800 py-12 px-4 sm:px-6 lg:px-8">
+    <main className="min-h-screen text-gray-800 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto  overflow-hidden">
         {/* Header */}
           <h1 className="text-4xl sm:text-5xl font-bold mb-2">Privacy Policy</h1>
@@ -16,7 +16,7 @@ export default function Privacycomp() {
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-[#310971]">Introduction</h2>
             <p className="text-gray-700 leading-relaxed">
-              This Privacy Policy describes how incorz LLC and its affiliates (collectively "we, our, us") collect, use, share, protect, or otherwise process your information/personal data through our website <a href="https://www.incorz.com" className="text-purple-600 underline hover:text-purple-800">www.incorz.com</a>. You may browse certain sections without registering. Your personal data will primarily be stored and processed in India. By using our platform, you agree to the terms of this Privacy Policy, Terms of Use, and applicable laws.
+              This Privacy Policy describes how incorz LLC and its affiliates (collectively "we, our, us") collect, use, share, protect, or otherwise process your information/personal data through our website <a href="https://www.incorz.com" className="text-[#F30C12] underline hover:text-[#F30C12]">www.incorz.com</a>. You may browse certain sections without registering. Your personal data will primarily be stored and processed in India. By using our platform, you agree to the terms of this Privacy Policy, Terms of Use, and applicable laws.
             </p>
           </div>
 
