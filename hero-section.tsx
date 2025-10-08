@@ -3,7 +3,7 @@ import { ArrowRight, Star } from "lucide-react"
 
 export default function HeroSection() {
   return (
-<div className="min-h-screen bg-gradient-to-r from-[#F30C12] to-[#690206] flex items-center">
+<div className="min-h-screen bg-gradient-to-r from-[#880000] to-[#ff0d13] flex items-center">
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         {/* Trustpilot Rating */}
