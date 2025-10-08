@@ -58,7 +58,7 @@ export function PricingSection() {
               </div>
 
               {/* Button */}
-              <button className="w-full bg-white text-[#E31E24] rounded-full py-3.5 sm:py-4 px-6 sm:px-8 text-base sm:text-lg font-semibold hover:bg-gray-50 transition-colors">
+              <button className="w-full bg-white text-[#ff0d13] rounded-full py-3.5 sm:py-4 px-6 sm:px-8 text-base sm:text-lg font-semibold hover:bg-gray-50 transition-colors">
                 Apply Now
               </button>
             </div>
@@ -67,7 +67,7 @@ export function PricingSection() {
             <div className="space-y-3 sm:space-y-3.5 md:space-y-4">
               {starterFeatures.map((feature, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <div className="flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#E31E24] flex items-center justify-center mt-0.5">
+                  <div className="flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#ff0d13] flex items-center justify-center mt-0.5">
                     <svg
                       width="12"
                       height="10"
@@ -127,7 +127,7 @@ export function PricingSection() {
               </div>
 
               {/* Button */}
-              <button className="w-full bg-white text-[#E31E24] rounded-full py-3.5 sm:py-4 px-6 sm:px-8 text-base sm:text-lg font-semibold hover:bg-gray-50 transition-colors relative z-10">
+              <button className="w-full bg-white text-[#ff0d13] rounded-full py-3.5 sm:py-4 px-6 sm:px-8 text-base sm:text-lg font-semibold hover:bg-gray-50 transition-colors relative z-10">
                 Apply Now
               </button>
             </div>
@@ -136,7 +136,7 @@ export function PricingSection() {
             <div className="space-y-3 sm:space-y-3.5 md:space-y-4">
               {advanceFeatures.map((feature, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <div className="flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#E31E24] flex items-center justify-center mt-0.5">
+                  <div className="flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#ff0d13] flex items-center justify-center mt-0.5">
                     <svg
                       width="12"
                       height="10"

@@ -57,7 +57,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="w-full py-10 xs:py-12 sm:py-14 md:py-16 bg-[#EA580C]">
+    <section id="contact" className="w-full py-10 xs:py-12 sm:py-14 md:py-16 bg-[#ff0d13]">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-6 xs:mb-8 sm:mb-10">
           <h2 className="text-2xl xs:text-3xl md:text-4xl font-bold text-white mb-2">
@@ -68,7 +68,7 @@ export default function ContactForm() {
           </p>
         </div>
 
-        <div className="bg-gradient-to-r from-[#C24505] to-[#EA580C] rounded-lg overflow-hidden flex flex-col md:flex-row">
+        <div className="bg-gradient-to-r from-[#C24505] to-[#ff0d13] rounded-lg overflow-hidden flex flex-col md:flex-row">
           {/* Form Section */}
           <div className="w-full md:w-1/2 p-8 md:p-10">
             <h3 className="text-xl font-semibold text-white mb-6">Send us a message</h3>
@@ -101,7 +101,7 @@ export default function ContactForm() {
                   value={formData.fullName}
                   onChange={handleChange}
                   placeholder="Full Name"
-                  className="w-full px-3 xs:px-4 py-2.5 xs:py-3 rounded bg-[#C24505]/70 border border-[#EA580C] text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#8A5DE8] text-sm"
+                  className="w-full px-3 xs:px-4 py-2.5 xs:py-3 rounded bg-[#C24505]/70 border border-[#ff0d13] text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#8A5DE8] text-sm"
                   required
                 />
               </div>
@@ -117,7 +117,7 @@ export default function ContactForm() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="your.email@example.com"
-                  className="w-full px-4 py-3 rounded bg-[#C24505]/70 border border-[#EA580C] text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#8A5DE8]"
+                  className="w-full px-4 py-3 rounded bg-[#C24505]/70 border border-[#ff0d13] text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#8A5DE8]"
                   required
                 />
               </div>
@@ -133,7 +133,7 @@ export default function ContactForm() {
                   onChange={handleChange}
                   placeholder="Your Message"
                   rows={4}
-                  className="w-full px-4 py-3 rounded bg-[#C24505]/70 border border-[#EA580C] text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#8A5DE8]"
+                  className="w-full px-4 py-3 rounded bg-[#C24505]/70 border border-[#ff0d13] text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#8A5DE8]"
                   required
                 />
               </div>
@@ -142,7 +142,7 @@ export default function ContactForm() {
                 type="submit"
                 className="flex items-center justify-center gap-2 
                   text-sm sm:text-base font-medium
-                  text-[#EA580C] capitalize bg-white
+                  text-[#ff0d13] capitalize bg-white
                   rounded-full px-6 py-3
                   transition-colors hover:bg-[#C24505]"
               >
@@ -153,13 +153,13 @@ export default function ContactForm() {
 
           {/* Image Section */}
           {!isMobile && (
-            <div className="w-full md:w-1/2 bg-gradient-to-r from-[#EA580C] to-[#C24505] flex items-center justify-center p-6">
+            <div className="w-full md:w-1/2 bg-gradient-to-r from-[#ff0d13] to-[#C24505] flex items-center justify-center p-6">
               <div className="relative w-full h-[300px] md:h-full">
                 <Image
                   src="https://v0.dev/_next/image?url=https%3A%2F%2Fhebbkx1anhila5yf.public.blob.vercel-storage.com%2Fc1a8ba111b0fe897ee5f1aa41a3feffa-dUqXkoAJ9SyFVwEbbHFGlggCjRWPKh.png&w=1920&q=75"
                   alt="Support team"
                   fill
-                  className="object-contain bg-gradient-to-r from-[#EA580C] to-[#C24505]"
+                  className="object-contain bg-gradient-to-r from-[#ff0d13] to-[#C24505]"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   priority
                 />
