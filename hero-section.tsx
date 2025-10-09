@@ -3,7 +3,7 @@ import { ArrowRight, Star } from "lucide-react"
 
 export default function HeroSection() {
   return (
-<div className="min-h-screen bg-gradient-to-r from-[#880000] to-[#ff0d13] flex items-center">
+<div className=" bg-gradient-to-r from-[#880000] to-[#ff0d13] flex items-center">
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         {/* Trustpilot Rating */}
@@ -39,7 +39,7 @@ export default function HeroSection() {
     }
   }}
               className="flex items-center justify-center gap-2 text-base md:text-lg 
-                         text-[#ff0d13] bg-white rounded-full px-6 py-3 font-medium shadow-md hover:shadow-lg transition"
+                         text-[#EA580C] bg-white rounded-full px-6 py-3 font-medium shadow-md hover:shadow-lg transition"
             >
               <span>Start Your Business</span>
               <ArrowRight className="w-5 h-5" />

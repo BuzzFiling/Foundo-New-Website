@@ -83,33 +83,16 @@ Real success stories from small business owners to enterprises! You can find our
           </p>
         </div>
 
-        {/* Background Globe Image with Enhanced Shadow */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-   
-
-          {/* Globe image */}
-          <div className="relative">
-            <Image
-              src="/images/globe.png"
-              alt="World Globe"
-              width={getGlobeSize().width}
-              height={getGlobeSize().height}
-              className="opacity-40"
-              style={{
-                filter: "drop-shadow(0 0 20px hex(#ff0d13))",
-              }}
-            />
-          </div>
-        </div>
 
         {/* Testimonials Grid - Responsive Layout */}
         <div className="relative z-10 flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center lg:items-stretch">
           {/* Left Purple Box - Responsive */}
-          <div className="bg-gradient-to-r from-[#880000] to-[#ff0d13] rounded-2xl flex flex-col justify-between overflow-hidden shadow-lg w-full max-w-[386px] lg:max-w-none lg:w-[386px] h-auto sm:h-[400px] lg:h-[467px]">
+          <div className="bg-gradient-to-r from-[#EA580C] to-[#C24505] rounded-2xl flex flex-col justify-between overflow-hidden shadow-lg w-full max-w-[386px] lg:max-w-none lg:w-[386px] h-auto sm:h-[400px] lg:h-[467px]">
             <div className="p-6 sm:p-8 flex-grow flex items-center">
-              <p className="text-white text-base sm:text-lg">
-               Incorz made setting up my IT consultancy seamless. Their expertise saved me weeks of confusion and paperwork.
-              </p>
+          <p className="text-white text-sm sm:text-base md:text-lg">
+  Incorz made setting up my IT consultancy seamless. Their expertise saved me weeks of confusion and paperwork.
+</p>
+
             </div>
 
             {/* Name and title at bottom of purple box */}
