@@ -1,7 +1,6 @@
 "use client"
-
-import Navbar from "@/Navbar" // adjust path as needed
-import Footer from "@/footer"
+import Navbar from "@/components/Navbar"
+import Footer from "@/components/footer"
 import Termscomp from "../termscomp"
 
 export default function Privacy() {
