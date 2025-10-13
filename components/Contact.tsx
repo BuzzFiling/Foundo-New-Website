@@ -158,7 +158,7 @@ export default function ContactFormWhiteText() {
             <Button
               type="submit"
               disabled={submitting}
-              className="bg-[#ff3b30] hover:bg-[#ff574d] text-black rounded-xl px-6 py-3 font-semibold"
+              className="bg-[#ff3b30] hover:bg-[#ff574d] text-white rounded-xl px-6 py-3 font-semibold"
             >
               <Send className={`h-4 w-4 mr-2 ${submitting ? "animate-pulse" : ""}`} />
               {submitting ? "Sending…" : "Send Message"}
