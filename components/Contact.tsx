@@ -17,7 +17,7 @@ import {
 } from "@/ui/select"
 import { Checkbox } from "@/ui/checkbox"
 
-export default function ContactFormWhiteText() {
+export default function ContactForm() {
   const [submitting, setSubmitting] = React.useState(false)
   const [status, setStatus] = React.useState<null | "ok" | "err">(null)
 

@@ -14,7 +14,6 @@ import ScrollToTop from "@/ui/scroll-to-top"
 import VideoTestimonials from "@/trusted-worldwide-section"
 import TestimonialCards from "@/components/Testimonail"
 import ClientLogoMarquee from "@/components/Client"
-import Form from "@/components/Contact"
 
 export default function Home() {
   return (
@@ -39,7 +38,7 @@ export default function Home() {
         
         <ClientLogoMarquee/> */}
                 
-        <Form/>
+        <ContactForm/>
         
 
       <Footer />
