@@ -1,130 +1,162 @@
 "use client"
 
-import { useEffect, useState } from "react"
-import Image from "next/image"
+import * as React from "react"
 
-interface Testimonial {
-  id: number
+type Video = {
   name: string
-  title: string
-  content: string
+  company: string
+  youtubeId: string
+  logoUrl?: string
 }
 
-export default function TrustedWorldwideSection() {
-  const [windowWidth, setWindowWidth] = useState(0)
+const VIDEOS: Video[] = [
+  { name: "Aar Hashmi", company: "Buzz Filing", youtubeId: "KIn4rnL4V44" },
+  { name: "Abhishek K Agarwal", company: "Incorz", youtubeId: "7Vwv2o8JvQ0" },
+  { name: "Krishna Pandey", company: "Foundo", youtubeId: "7Vwv2o8JvQ0" },
+  { name: "Shubhankar", company: "Micahguru", youtubeId: "RGtfEVWkztY" },
+  { name: "Venkatesh", company: "Eclat Interiors", youtubeId: "RGtfEVWkztY" },
+  { name: "Praneet Ghosh", company: "JZ Ecommerce", youtubeId: "RGtfEVWkztY" },
+]
 
-  // Track window width for responsive adjustments
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth)
-    }
+function loopItems<T>(arr: T[], times = 2): T[] {
+  return Array(times).fill(null).flatMap(() => arr)
+}
 
-    // Set initial width
-    handleResize()
-
-    // Add event listener
-    window.addEventListener("resize", handleResize)
-
-    // Cleanup
-    return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [])
-
-  const testimonials: Testimonial[] = [
-    {
-      id: 1,
-      name: "Priya Nair",
-      title: "E-Commerce",
-      content:
-        "Affordable, fast, and reliable—Incorz helped launch my e-commerce brand in record time.",
-    },
-    {
-      id: 2,
-      name: "Arjun Sharma",
-      title: "FinTech",
-      content:
-        "I was impressed with their clear guidance and quick turnaround. Perfect partner for startups like mine",
-    },
-    {
-      id: 3,
-      name: "Sneha Patel",
-      title: "Fashion Retail",
-      content:
-        "Thanks to Incorz, I could focus on my business while they handled all compliance smoothly.",
-    },
-    {
-      id: 4,
-      name: "Vikram Iyer",
-      title: "Healthcare",
-      content:
-        "Professional, transparent, and supportive—Incorz is the reason my healthcare startup could go global.",
-    },
-  ]
-
-  // Calculate globe size based on screen width
-  const getGlobeSize = () => {
-    if (windowWidth < 640) return { width: 500, height: 500 }
-    if (windowWidth < 1024) return { width: 600, height: 600 }
-    return { width: 800, height: 800 }
-  }
+export default function VideoTestimonialsOneRow({
+  duration = 34,
+  pauseOnHover = true,
+  gapClassName = "gap-3 sm:gap-5 md:gap-7 lg:gap-8",
+}: {
+  duration?: number
+  pauseOnHover?: boolean
+  gapClassName?: string
+}) {
+  const items = React.useMemo(() => loopItems(VIDEOS, 2), [])
 
   return (
-    <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-8 bg-white relative overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
-        <div className="text-center mb-8 sm:mb-12 md:mb-16 relative z-10">
-          <h2 className="text-[#333] text-2xl sm:text-3xl md:text-4xl font-semibold mb-3 sm:mb-4">
-            Trusted Worldwide: Serving Across 149+ Countries
-          </h2>
-          <p className="text-[#555] max-w-3xl mx-auto text-sm sm:text-base">
-Real success stories from small business owners to enterprises! You can find our clients' experiences below and discover how Clemta can help you turn your dream business into reality.
+    <section className="relative w-full py-10 sm:py-14 md:py-20 bg-white">
+      {/* Heading */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 text-center mb-8 sm:mb-10 md:mb-12">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#880000] via-[#ff3b30] to-[#ff8a80]">
+            What Our Clients Say
+          </span>
+        </h2>
+        <p className="mt-2 text-sm sm:text-base text-black/80">
+          Short, authentic video testimonials from real founders.
+        </p>
+      </div>
 
-          </p>
+      {/* Row */}
+      <div className="group relative overflow-hidden" data-pause={pauseOnHover ? "hover" : undefined}>
+        {/* Edge Fades */}
+        <div className="absolute inset-y-0 left-0 w-14 sm:w-20 md:w-24 bg-gradient-to-r from-white via-white/70 to-transparent z-10" />
+        <div className="absolute inset-y-0 right-0 w-14 sm:w-20 md:w-24 bg-gradient-to-l from-white via-white/70 to-transparent z-10" />
+
+        {/* Track */}
+        <div
+          className={[
+            "flex items-stretch",
+            gapClassName,
+            "whitespace-nowrap will-change-transform",
+            "animate-[marquee_linear_infinite]",
+            "[animation-duration:var(--row-duration,34s)]",
+            pauseOnHover ? "group-hover:[animation-play-state:paused]" : "",
+            "motion-reduce:animate-none motion-reduce:translate-x-0",
+            "px-4 sm:px-6 md:px-8",
+          ].join(" ")}
+          style={{ ["--row-duration" as any]: `${duration}s` }}
+        >
+          {items.map((v, i) => (
+            <Card key={`${v.youtubeId}-${i}`} video={v} />
+          ))}
         </div>
+      </div>
 
+      <style jsx global>{`
+        @keyframes marquee {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+      `}</style>
+    </section>
+  )
+}
 
-        {/* Testimonials Grid - Responsive Layout */}
-        <div className="relative z-10 flex flex-col lg:flex-row gap-6 sm:gap-8 justify-center items-center lg:items-stretch">
-          {/* Left Purple Box - Responsive */}
-          <div className="bg-gradient-to-r from-[#EA580C] to-[#C24505] rounded-2xl flex flex-col justify-between overflow-hidden shadow-lg w-full max-w-[386px] lg:max-w-none lg:w-[386px] h-auto sm:h-[400px] lg:h-[467px]">
-            <div className="p-6 sm:p-8 flex-grow flex items-center">
-          <p className="text-white text-sm sm:text-base md:text-lg">
-  Incorz made setting up my IT consultancy seamless. Their expertise saved me weeks of confusion and paperwork.
-</p>
+function initials(name: string) {
+  const parts = name.split(" ")
+  const first = parts[0]?.[0] ?? ""
+  const last = parts.length > 1 ? parts[parts.length - 1][0] : ""
+  return (first + last).toUpperCase()
+}
 
-            </div>
+function Card({ video }: { video: Video }) {
+  const { name, company, youtubeId, logoUrl } = video
+  const [playing, setPlaying] = React.useState(false)
 
-            {/* Name and title at bottom of purple box */}
-            <div className="p-6 sm:p-8 pt-0">
-              <h3 className="font-medium text-base sm:text-lg text-white">Rohit Mehta</h3>
-              <p className="text-xs sm:text-sm text-white/80">IT Services</p>
-            </div>
-          </div>
-
-          {/* Right Testimonials Grid - Responsive */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full max-w-[386px] sm:max-w-[780px] lg:max-w-none">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={testimonial.id}
-                className="bg-white rounded-2xl p-4 sm:p-6 shadow-sm relative border border-gray-100 h-auto sm:h-[200px] lg:h-[220px] w-full"
-              >
-                <div className="mb-2 sm:mb-4">
-                  <h3 className="font-medium text-base sm:text-lg text-gray-800">{testimonial.name}</h3>
-                  <p className="text-xs sm:text-sm text-gray-500">{testimonial.title}</p>
-                </div>
-                <p className="text-gray-600 text-xs sm:text-sm">{testimonial.content}</p>
-
-                {/* Active Indicator Dot - Only on the third card (bottom left) */}
-                {index === 2 && (
-                  <div className="absolute bottom-4 sm:bottom-6 right-4 sm:right-6">
-                  </div>
-                )}
+  return (
+    <article
+      className={[
+        "relative flex-none group/card",
+        "p-[1px] rounded-2xl bg-gradient-to-b from-black/5 to-black/10 shadow-md ",
+        "w-[38vw] min-w-[140px] max-w-[220px]",
+        "sm:w-[30vw] sm:min-w-[160px] sm:max-w-[260px]",
+        "md:w-[24vw] md:min-w-[180px] md:max-w-[280px]",
+        "lg:w-[20vw] lg:min-w-[200px] lg:max-w-[300px]",
+        "aspect-[9/16]",
+      ].join(" ")}
+    >
+      <div className="relative h-full w-full rounded-[calc(theme(borderRadius.2xl)-1px)] overflow-hidden bg-white">
+        {!playing ? (
+          <button onClick={() => setPlaying(true)} className="absolute inset-0">
+            <img
+              src={`https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`}
+              alt=""
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="rounded-full bg-black/60 p-3">
+                <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
               </div>
-            ))}
+            </div>
+          </button>
+        ) : (
+          <iframe
+            className="absolute inset-0 h-full w-full"
+            src={`https://www.youtube.com/embed/${youtubeId}?rel=0&modestbranding=1&autoplay=1`}
+            allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        )}
+
+        {/* Bottom Glass Info Card */}
+        <div className="absolute inset-x-3 bottom-3">
+          <div className="flex items-center gap-2 backdrop-blur-md bg-white/85 border border-white/60 shadow-md rounded-xl px-3 py-2">
+            {logoUrl ? (
+              <img src={logoUrl} alt="" className="h-6 w-6 rounded-full object-cover" />
+            ) : (
+              <div className="flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-gray-700 to-gray-500 text-white text-[10px] font-semibold">
+                {initials(name)}
+              </div>
+            )}
+            <div className="min-w-0">
+              <p className="truncate text-[11px] sm:text-xs md:text-sm font-semibold text-black">
+                {name}
+              </p>
+              <p className="truncate text-[10px] sm:text-[11px] md:text-xs text-black/70">
+                {company}
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </article>
   )
 }
