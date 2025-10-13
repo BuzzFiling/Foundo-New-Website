@@ -11,11 +11,10 @@ import WhyIncorz from "@/why-incorz"
 import ContactForm from "@/components/contact-form"
 import AnimatedSection from "@/ui/animated-section"
 import ScrollToTop from "@/ui/scroll-to-top"
-import VideoTestimonialsSection from "@/trusted-worldwide-section"
+import VideoTestimonials from "@/trusted-worldwide-section"
 import TestimonialCards from "@/components/Testimonail"
 import ClientLogoMarquee from "@/components/Client"
 import Form from "@/components/Contact"
-import FaqSection from "@/components/faq"
 
 export default function Home() {
   return (
@@ -34,14 +33,12 @@ export default function Home() {
 
         <WhyIncorz />
 
-        <VideoTestimonialsSection />
+        <VideoTestimonials />
         
-        <TestimonialCards/>
+        {/* <TestimonialCards/>
         
-        <ClientLogoMarquee/>
-        
-        <FaqSection/>
-        
+        <ClientLogoMarquee/> */}
+                
         <Form/>
         
 

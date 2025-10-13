@@ -3,7 +3,7 @@ import { ArrowRight, Star } from "lucide-react"
 
 export default function HeroSection() {
   return (
-<div className=" bg-gradient-to-r from-[#880000] to-[#ff0d13] flex items-center">
+    <div className="bg-gradient-to-r from-[#880000] to-[#ff0d13] flex items-center">
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         {/* Trustpilot Rating */}
@@ -19,8 +19,8 @@ export default function HeroSection() {
 
         {/* Heading + Subtitle */}
         <div className="text-center py-10 sm:py-16">
-          <h1 className="text-6xl md:text-6xl font-bold text-white mb-6 sm:mb-8 leading-tight tracking-tight break-words">
-            Start Your U.S Business 🚀 <br className="hidden sm:block"/> 
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 sm:mb-8 leading-tight tracking-tight break-words">
+            Start Your U.S Business 
             Fast & Fully Online
           </h1>
 
@@ -33,11 +33,11 @@ export default function HeroSection() {
           <div className="flex justify-center items-center">
             <button
               onClick={() => {
-    const contactSection = document.getElementById("contact")
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" }) // smooth scroll
-    }
-  }}
+                const contactSection = document.getElementById("contact")
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: "smooth" })
+                }
+              }}
               className="flex items-center justify-center gap-2 text-base md:text-lg 
                          text-[#ff0d13] bg-white rounded-full px-6 py-3 font-medium shadow-md hover:shadow-lg transition"
             >
