@@ -8,12 +8,9 @@ import { PricingSection } from "@/pricing-section"
 import ServicesGrid from "@/Services"
 import Footer from "@/components/footer"
 import WhyIncorz from "@/why-incorz"
-import ContactForm from "@/components/contact-form"
-import AnimatedSection from "@/ui/animated-section"
 import ScrollToTop from "@/ui/scroll-to-top"
 import VideoTestimonials from "@/trusted-worldwide-section"
-import TestimonialCards from "@/components/Testimonail"
-import ClientLogoMarquee from "@/components/Client"
+import Form from "@/components/Contact"
 
 export default function Home() {
   return (
@@ -38,7 +35,7 @@ export default function Home() {
         
         <ClientLogoMarquee/> */}
                 
-        <ContactForm/>
+        <Form/>
         
 
       <Footer />
