@@ -38,7 +38,7 @@ const defaultCompanyLogos: LogoInput[] = [
   "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
   "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg",
   "https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg",
-  "https://upload.wikimedia.org/wikipedia/commons/c/c9/Intel-logo.svg",
+  "https://www.bing.com/th/id/OIP.ReQPqyw_bQ55YhU846rjowAAAA?w=205&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
   "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
   "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
   "https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg",

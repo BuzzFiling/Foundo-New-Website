@@ -67,7 +67,7 @@ export default function StateFeesCalculator() {
   const totalFee = FILING_FEE + stateFee
 
   return (
-    <section className="w-full bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-10 rounded-3xl shadow-sm">
+    <section className="w-full bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-10">
       {/* Section Heading */}
       <div className="text-center mb-8 sm:mb-10 md:mb-12">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-900 mb-3">
@@ -79,7 +79,7 @@ export default function StateFeesCalculator() {
       </div>
 
       {/* Calculator Card */}
-      <div className="mx-auto max-w-3xl bg-white/70 rounded-2xl p-6 sm:p-8 md:p-10 ring-1 ring-neutral-200/60">
+      <div className="mx-auto max-w-3xl p-6 sm:p-8 md:p-10 ">
         {/* State Selection */}
         <div className="mb-6 sm:mb-7 md:mb-8">
           <label className="mb-2 sm:mb-3 block text-xs sm:text-sm font-semibold uppercase tracking-wide text-neutral-700">
