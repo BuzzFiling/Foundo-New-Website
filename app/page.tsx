@@ -11,6 +11,10 @@ import WhyIncorz from "@/why-incorz"
 import ScrollToTop from "@/ui/scroll-to-top"
 import VideoTestimonials from "@/trusted-worldwide-section"
 import Form from "@/components/Contact"
+import Brands from "@/components/Brands"
+import Testimonialspic from "@/components/Testimonialspic"
+import ContactForm from "@/components/Contact"
+import StateFeesCalculator from "@/components/StateFees"
 
 export default function Home() {
   return (
@@ -31,14 +35,17 @@ export default function Home() {
 
         <VideoTestimonials />
         
-        {/* <TestimonialCards/>
+        <Brands/>
         
-        <ClientLogoMarquee/> */}
-                
-        <Form/>
+        <Testimonialspic/>
+
+        <StateFeesCalculator/>
+   
+        <ContactForm/>
         
 
       <Footer />
+      
 
       {/* Scroll to top button */}
       <ScrollToTop />
