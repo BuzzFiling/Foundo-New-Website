@@ -61,14 +61,14 @@ export default function VideoTestimonials() {
 
     let animationId: number
     let scrollPosition = 0
-    const scrollSpeed = window.innerWidth < 768 ? 0.3 : 0.5
+const scrollSpeed = window.innerWidth < 768 ? 3 : 3
 
     const animate = () => {
       if (!isPaused && scrollContainer) {
         scrollPosition += scrollSpeed
 
         if (scrollPosition >= scrollContainer.scrollWidth / 2) {
-          scrollPosition = 0
+          scrollPosition = 1
         }
 
         scrollContainer.scrollLeft = scrollPosition

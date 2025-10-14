@@ -51,7 +51,7 @@ export function PricingSection() {
               </div>
 
               {/* Title and Price */}
-              <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-medium mb-3 sm:mb-4">Starter Pakoage</h3>
+              <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-medium mb-3 sm:mb-4">Starter Package</h3>
               <div className="mb-6 sm:mb-7 md:mb-8">
                 <span className="text-white text-4xl sm:text-5xl md:text-6xl font-bold">$149</span>
                 <span className="text-white text-lg sm:text-xl md:text-2xl ml-2">+ State Fee</span>
@@ -119,7 +119,7 @@ export function PricingSection() {
 
               {/* Title and Price */}
               <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-medium mb-3 sm:mb-4 relative z-10">
-                Advnace Palcoage
+                Advnace Package
               </h3>
               <div className="mb-6 sm:mb-7 md:mb-8 relative z-10">
                 <span className="text-white text-4xl sm:text-5xl md:text-6xl font-bold">$249</span>
