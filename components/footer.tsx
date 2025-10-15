@@ -97,7 +97,7 @@ export default function Footer() {
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
                 <p className="text-sm">
-                  hello@incorz.com
+                  hello@BuzzFilling.com
                 </p>
               </div>
               <div className="flex items-center gap-2 group">
@@ -130,7 +130,7 @@ export default function Footer() {
             {/* Social Media Icons */}
             <div className="flex gap-3 xs:gap-4">
               <Link
-                href="https://www.facebook.com/Incorz"
+                href="https://www.facebook.com/BuzzFilling"
                 aria-label="Facebook"
                 className="w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 flex items-center justify-center border border-white rounded-sm hover:bg-white hover:text-[#6200FF] transition-colors duration-300"
               >
@@ -149,7 +149,7 @@ export default function Footer() {
                 </svg>
               </Link>
               <Link
-                href="https://www.linkedin.com/company/incorz"
+                href="https://www.linkedin.com/company/BuzzFilling"
                 aria-label="LinkedIn"
                 className="w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 flex items-center justify-center border border-white rounded-sm hover:bg-white hover:text-[#6200FF] transition-colors duration-300"
               >
@@ -170,7 +170,7 @@ export default function Footer() {
                 </svg>
               </Link>
               <Link
-                href="https://www.instagram.com/incorz/"
+                href="https://www.instagram.com/BuzzFilling/"
                 aria-label="Instagram"
                 className="w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 flex items-center justify-center border border-white rounded-sm hover:bg-white hover:text-[#6200FF] transition-colors duration-300"
               >
@@ -197,7 +197,7 @@ export default function Footer() {
 
             {/* Footer Text - Only show on larger screens or at bottom on mobile */}
             <div className="text-[10px] xs:text-xs max-w-xs opacity-80 hidden sm:block">
-              Incorz is a technology company. We are not a law firm, nor can we offer official legal advice.
+              BuzzFilling is a technology company. We are not a law firm, nor can we offer official legal advice.
             </div>
           </div>
 

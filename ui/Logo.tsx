@@ -16,7 +16,7 @@ export default function Logo({
   size = 200,
   className = "",
   showText = true,
-  brand = "Incorz",
+  brand = "BuzzFilling",
 }: LogoProps) {
   return (
     <Link

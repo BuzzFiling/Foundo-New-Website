@@ -8,7 +8,7 @@ import Image from "next/image"
 
 
 
-export default function WhyIncorz() {
+export default function WhyBuzzFilling() {
 
   return (
 
@@ -24,7 +24,7 @@ export default function WhyIncorz() {
 
             <h2 className="text-[#4e4747] text-4xl md:text-5xl font-bold mb-6">
 
-              Why Incorz?
+              Why BuzzFilling?
 
             </h2>
 
@@ -34,7 +34,7 @@ export default function WhyIncorz() {
 
               We understand how to simplify the complexity of forming your
 
-              company because we’ve lived it ourselves. Incorz was created from
+              company because we’ve lived it ourselves. BuzzFilling was created from
 
               our own struggles—navigating a confusing, time-consuming setup
 
@@ -146,4 +146,4 @@ export default function WhyIncorz() {
 
 }
 
-//why incorz
+//why BuzzFilling

@@ -7,10 +7,9 @@ import Navbar from "@/components/Navbar"
 import { PricingSection } from "@/pricing-section"
 import ServicesGrid from "@/Services"
 import Footer from "@/components/footer"
-import WhyIncorz from "@/why-incorz"
+import WhyBuzzFilling from "@/why-incorz"
 import ScrollToTop from "@/ui/scroll-to-top"
 import VideoTestimonials from "@/trusted-worldwide-section"
-import Form from "@/components/Contact"
 import Brands from "@/components/Brands"
 import Testimonialspic from "@/components/Testimonialspic"
 import ContactForm from "@/components/Contact"
@@ -31,7 +30,7 @@ export default function Home() {
 
         <ServicesGrid />
 
-        <WhyIncorz />
+        <WhyBuzzFilling />
 
         <VideoTestimonials />
         
